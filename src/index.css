@@ -1,0 +1,126 @@
+/* Start font import */
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-LightItalic.ttf');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-ThinItalic.ttf');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-BlackItalic.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+/* End font import */
+
+/* Reset rules */
+* {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-decoration: none;
+
+  font-family: Lato, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+html, 
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Start header and footer styling */
+header,
+footer {
+  width: 100%;
+  justify-content: center;
+}
+
+header ul {
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+header ul li {
+  font-size: 26px;
+
+  padding: 12px 12px;
+  margin: 0 18px;
+
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid white;
+}
+
+header ul li.selected {
+  border-color: red;
+}
+/* End header and footer styling */
+
+h1 {
+  text-align: center;
+}
