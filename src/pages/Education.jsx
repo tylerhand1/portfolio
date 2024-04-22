@@ -4,7 +4,9 @@ const Education = () => {
   return (
     <>
       <Navbar isEducation={true} />
-      <h1>Education</h1>
+      <main>
+        <h1>Education</h1>
+      </main>
     </>
   );
 };

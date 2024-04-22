@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 const Navbar = ({ isHome, isEducation, isProjects }) => {
   return (
@@ -26,12 +26,6 @@ const Navbar = ({ isHome, isEducation, isProjects }) => {
       </header>
     </>
   );
-};
-
-Navbar.propTypes = {
-  isHome: PropTypes.boolean,
-  isEducation: PropTypes.boolean,
-  isProjects: PropTypes.boolean,
 };
 
 export default Navbar;

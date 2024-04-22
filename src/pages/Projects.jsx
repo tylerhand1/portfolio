@@ -4,7 +4,9 @@ const Projects = () => {
   return (
     <>
       <Navbar isProjects={true} />
-      <h1>Projects</h1>
+      <main>
+        <h1>Projects</h1>
+      </main>
     </>
   );
 };
