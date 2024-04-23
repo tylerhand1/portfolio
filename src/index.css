@@ -66,7 +66,6 @@
   margin: 0;
   padding: 0;
 
-  list-style: none;
   text-decoration: none;
 
   font-family: Lato, sans-serif;
@@ -117,6 +116,7 @@ header ul {
   flex: 1;
   justify-content: center;
   align-items: flex-end;
+  list-style: none;
 }
 
 header ul li {
@@ -146,8 +146,21 @@ main {
   width: 67%;
 
   margin-top: 24px;
+
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
   text-align: center;
+}
+
+.card {
+  outline: 1px solid black;
+  border-radius: 4px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  width: 50%;
 }
