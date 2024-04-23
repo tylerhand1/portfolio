@@ -85,8 +85,11 @@ body {
   height: 100%;
   width: 100%;
 
-  --main-bg-color: #1d2124;
-  --main-text-color: #fff;
+  /* --main-bg-color: #1d2124; */
+  --main-bg-color: #fff;
+  --main-text-color: #111;
+  --main-highlight-color: #10ac84;
+  --secondary-highlight-color: #1dd1a1;
 }
 
 body {
@@ -104,12 +107,10 @@ header,
 footer {
   width: 100%;
   justify-content: center;
-
-  color: #f1c40f;
 }
 
 header {
-  border-bottom: 1px solid #03f7c6;
+  border-bottom: 1px solid var(--secondary-highlight-color);
 }
 
 header ul {
@@ -130,9 +131,7 @@ header ul li {
 
 header ul li.selected,
 header ul li:hover {
-  color: #f39c12;
-  
-  /* border-color: red; */
+  color: var(--main-highlight-color);
 }
 
 header ul li a {
