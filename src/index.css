@@ -91,6 +91,7 @@ body {
   /* --main-bg-color: #1d2124; */
   --main-bg-color: #fff;
   --main-text-color: #111;
+  --secondary-text-color: #666;
   --main-highlight-color: #10ac84;
   --secondary-highlight-color: #1dd1a1;
 }
@@ -183,17 +184,35 @@ h2 {
   padding: 12px;
 
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: auto;
-  column-gap: 24px;
-  row-gap: 48px;
+  grid-auto-rows: 1fr;
+  column-gap: 36px;
+  row-gap: 36px;
 
-  justify-items: center;
-  align-items: center;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
-.project-card {
-  outline: 1px solid var(--secondary-highlight-color);
-  width: 300px;
-  height: 300px;
+.project-card a {
+  outline: 2px solid var(--secondary-highlight-color);
+  border-radius: 4px;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-around;
+
+  color: var(--main-text-color);
+
+  padding: 12px;
+
+  text-align: center;
+}
+
+.project-card h4 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.project-card p {
+  color: var(--secondary-text-color);
+  font-style: italic;
 }
 /* End project styling */
