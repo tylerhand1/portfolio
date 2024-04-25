@@ -5,12 +5,9 @@ const Home = () => {
     <>
       <Navbar isHome={true} />
       <main className="flex">
-        <h1>Home</h1>
-        <div className="card flex">
-          <h2>About Me</h2>
-          <ul>
-            <li>Current student at CU Boulder</li>
-          </ul>
+        <div className="card">
+          <h1>About Me</h1>
+          <p>I am a computer science student.</p>
         </div>
       </main>
     </>
