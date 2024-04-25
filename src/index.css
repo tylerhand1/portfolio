@@ -193,7 +193,7 @@ h2 {
 }
 
 .project-card a {
-  outline: 2px solid var(--secondary-highlight-color);
+  outline: 2px solid var(--main-highlight-color);
   border-radius: 4px;
   height: 80%;
   flex-direction: column;
@@ -204,6 +204,10 @@ h2 {
   padding: 12px;
 
   text-align: center;
+}
+
+.project-card a:hover {
+  outline-color: var(--secondary-highlight-color);
 }
 
 .project-card h4 {
