@@ -2,8 +2,12 @@
 import { Link } from 'react-router-dom';
 
 const Project = ({ img, imgAlt, title, info }) => {
+  const createLink = (title) => {
+    return title.replace(/ /g, '-');
+  };
+
   let baseLink = '/projects';
-  let titleLink = title.replace(/ /g, '-');
+  let titleLink = createLink(title);
 
   if (img && imgAlt) {
     return (
