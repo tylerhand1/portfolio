@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <>
       <Navbar isProjects={true} />
-      <main className="flex">
+      <main className="flex project-container-root">
         <h1>Projects</h1>
         <div className="project-container grid">
           <Project title={'Biology Lab Simulator'} info={'Collaborated with a team of six to build a biology lab simulator for BioFrontiers Institute'} />
