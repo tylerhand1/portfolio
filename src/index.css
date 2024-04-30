@@ -184,9 +184,26 @@ h2 {
 }
 /* End general main styling */
 
+/* Home Page */
+.home-card {
+
+}
+
+.home-card-sections-container {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 36px;
+
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.home-card-section p {
+  color: var(--secondary-text-color);
+}
+
 /* Education page */
 .education-title-container {
-  display: flex;
   padding: 6px 0 6px;
 }
 
@@ -213,7 +230,6 @@ h2 {
 }
 
 .education-title-logo-container {
-  display: flex;
   flex: 1;
   justify-content: flex-end;
   align-items: center;
@@ -236,8 +252,7 @@ h2 {
 
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 1fr;
-  column-gap: 36px;
-  row-gap: 36px;
+  gap: 36px;
 
   justify-items: stretch;
   align-items: stretch;
