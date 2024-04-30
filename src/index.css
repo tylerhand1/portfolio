@@ -88,11 +88,9 @@ body {
   height: 100%;
   width: 100%;
 
-  /* --main-bg-color: #1d2124; */
-  --main-bg-color: #fff;
-  --main-text-color: #111;
-  /* --main-text-color: #fff; */
-  --secondary-text-color: #666;
+  --main-bg-color: #1d2124;
+  --main-text-color: #fff;
+  --secondary-text-color: #eee;
   --main-highlight-color: #10ac84;
   --secondary-highlight-color: #1dd1a1;
 }
@@ -115,7 +113,7 @@ footer {
 }
 
 header {
-  border-bottom: 1px solid var(--secondary-highlight-color);
+  border-bottom: 2px solid var(--secondary-highlight-color);
 
   margin-bottom: 36px;
 }
@@ -142,8 +140,12 @@ header ul li a {
   padding: 12px 0;
 }
 
-header ul li.selected a,
 header ul li a:hover {
+  color: var(--secondary-highlight-color);
+}
+
+header ul li.selected a,
+header ul li a:focus {
   color: var(--main-highlight-color);
 }
 /* End header and footer styling */
@@ -153,8 +155,6 @@ main {
   color: var(--main-text-color);
 
   width: 67%;
-
-  /* margin-top: 36px; */
 
   flex-direction: column;
   align-items: center;
@@ -171,7 +171,7 @@ h2 {
 }
 
 .card {
-  outline: 2px solid var(--main-highlight-color);
+  outline: 2px solid var(--secondary-highlight-color);
   border-radius: 4px;
 
   width: 60%;
@@ -183,6 +183,7 @@ h2 {
   margin-top: 6px;
 }
 /* End general main styling */
+
 /* Projects Page */
 .project-container-root {
   margin-top: -12px;
@@ -202,7 +203,7 @@ h2 {
 }
 
 .project-card a {
-  outline: 2px solid var(--main-highlight-color);
+  outline: 2px solid var(--main-text-color);
   border-radius: 4px;
   height: 80%;
   flex-direction: column;
@@ -217,6 +218,10 @@ h2 {
 
 .project-card a:hover {
   outline-color: var(--secondary-highlight-color);
+}
+
+.project-card a:focus {
+  outline-color: var(--main-highlight-color)
 }
 
 .project-card h4 {
