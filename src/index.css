@@ -203,6 +203,10 @@ h2 {
 }
 
 /* Education page */
+.education-card p {
+  font-size: 18px; 
+}
+
 .education-title-container {
   padding: 6px 0 6px;
 }
