@@ -1,15 +1,25 @@
 import Navbar from '../components/Navbar';
 
+import CULogo from '../assets/education/cu_logo.svg';
+
 const Education = () => {
   return (
     <>
       <Navbar isEducation={true} />
-      <main className="flex">
-        <div className="card">
+      <main className='flex'>
+        <div className='card education-card'>
           <h1>Education</h1>
-          <h2>University of Colorado Boulder</h2>
-          <h3>Bachelor of Science in Computer Science</h3>
-          <p>Expected graduation: May 2024</p>
+          <div className='education-title-container'>
+            <div className='education-title-text-container'>
+              <h2>University of Colorado Boulder</h2>
+              <h3>Bachelor of Science in Computer Science</h3>
+              <h4>Expected graduation: May 2024</h4>
+            </div>
+            <div className='education-title-logo-container'>
+              <img src={CULogo} className='cu-logo' />
+            </div>
+          </div>
+          
           <p>Prior to starting my education journey at CU Boulder, I was always interested in programming
             and web development. Because of this passion, I chose to pursue a Bachelor&apos;s of Science 
             in computer science.
