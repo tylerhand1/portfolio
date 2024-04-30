@@ -90,7 +90,7 @@ body {
 
   --main-bg-color: #1d2124;
   --main-text-color: #fff;
-  --secondary-text-color: #eee;
+  --secondary-text-color: #ddd;
   --main-highlight-color: #10ac84;
   --secondary-highlight-color: #1dd1a1;
 }
@@ -174,7 +174,7 @@ h2 {
   outline: 2px solid var(--secondary-highlight-color);
   border-radius: 4px;
 
-  width: 60%;
+  width: 80%;
 
   padding: 12px;
 }
@@ -183,6 +183,47 @@ h2 {
   margin-top: 6px;
 }
 /* End general main styling */
+
+/* Education page */
+.education-title-container {
+  display: flex;
+  padding: 6px 0 6px;
+}
+
+.education-title-text-container {
+  flex: 2;
+}
+
+.education-title-text-container h2 {
+  font-size: 32px;
+}
+
+.education-title-text-container h3,
+.education-title-text-container h4 {
+  color: var(--secondary-text-color);
+  padding: 4px 0;
+}
+
+.education-title-text-container h3 {
+  font-size: 22px;
+}
+
+.education-title-text-container h4 {
+  font-style: none;
+}
+
+.education-title-logo-container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cu-logo {
+  height: 90px;
+
+  padding-right: 24px;
+}
 
 /* Projects Page */
 .project-container-root {
