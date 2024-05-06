@@ -1,0 +1,318 @@
+/* Start font import */
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-LightItalic.ttf');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-ThinItalic.ttf');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-BlackItalic.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+/* End font import */
+
+/* Reset rules */
+* {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+
+  font-family: Lato, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+html, 
+body {
+  height: 100%;
+}
+
+:root {
+  height: 100%;
+  width: 100%;
+
+  --main-bg-color: #1d2124;
+  --main-text-color: #fff;
+  --secondary-text-color: #ddd;
+  --main-highlight-color: #10ac84;
+  --secondary-highlight-color: #1dd1a1;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Start header and footer styling */
+header,
+footer {
+  width: 100%;
+  justify-content: center;
+}
+
+header {
+  border-bottom: 2px solid var(--secondary-highlight-color);
+
+  margin-bottom: 36px;
+}
+
+header ul {
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+  list-style: none;
+}
+
+header ul li {
+  font-size: 26px;
+
+  padding: 0 32px;
+  margin: 0 18px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li a {
+  color: var(--main-text-color);
+  padding: 12px 0;
+}
+
+header ul li a:hover {
+  color: var(--secondary-highlight-color);
+}
+
+header ul li.selected a,
+header ul li a:focus {
+  color: var(--main-highlight-color);
+}
+/* End header and footer styling */
+
+/* General main styling */
+main {
+  color: var(--main-text-color);
+
+  width: 67%;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+h2 {
+  padding-bottom: 3px;
+}
+
+.card {
+  outline: 2px solid var(--secondary-highlight-color);
+  border-radius: 4px;
+
+  width: 67%;
+
+  padding: 12px;
+}
+
+.card p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+/* End general main styling */
+
+/* Home Page */
+.home-card-section h2 {
+  margin: 12px 0 0;
+}
+
+.home-card-section p:nth-child(2n + 1) {
+  margin: 18px 0;
+}
+
+.tech-icons-container {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.tech-icons-container p.tech-icon-label {
+  font-size: 14px;
+  margin: 6px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tech-icon-container {
+  text-align: center;
+  flex-direction: column;
+}
+
+.tech-icon {
+  height: 60px;
+}
+
+.home-card-sections-container {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 36px;
+
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.home-card-section p {
+  color: var(--secondary-text-color);
+}
+
+/* Education page */
+.education-title-container {
+  padding: 6px 0 6px;
+}
+
+.education-title-text-container {
+  flex: 2;
+}
+
+.education-title-text-container h2 {
+  font-size: 32px;
+}
+
+.education-title-text-container h3,
+.education-title-text-container h4 {
+  color: var(--secondary-text-color);
+  padding: 4px 0;
+}
+
+.education-title-text-container h3 {
+  font-size: 22px;
+}
+
+.education-title-text-container h4 {
+  font-style: none;
+}
+
+.education-title-logo-container {
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cu-logo {
+  height: 90px;
+
+  padding-right: 24px;
+}
+
+/* Projects Page */
+.project-container-root {
+  margin-top: -12px;
+}
+
+.project-container {
+  width: 100%;
+  padding: 12px;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 36px;
+
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.project-card a {
+  outline: 2px solid var(--main-text-color);
+  border-radius: 4px;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-around;
+
+  color: var(--main-text-color);
+
+  padding: 12px;
+
+  text-align: center;
+}
+
+.project-card a:hover {
+  outline-color: var(--secondary-highlight-color);
+}
+
+.project-card a:focus {
+  outline-color: var(--main-highlight-color)
+}
+
+.project-card h4 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.project-card p {
+  color: var(--secondary-text-color);
+  font-style: italic;
+}
+/* End project styling */

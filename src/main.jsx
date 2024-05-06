@@ -1,6 +1,41 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import {
+  BrowserRouter as Router,
+  Routes, Route, Navigate
+} from 'react-router-dom';
+import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render( <App />)
+// Pages
+import Home from './pages/Home';
+import Education from './pages/Education';
+import Projects from './pages/Projects';
+import PageNotFound from './pages/PageNotFound';
+
+// Project Pages
+import BioLabSim from './pages/projects/BioLabSim';
+import ConnectFourAI from './pages/projects/ConnectFourAI';
+import DoodleDesigner from './pages/projects/DoodleDesigner';
+import ProxyWebServer from './pages/projects/ProxyWebServer';
+import SatTrack from './pages/projects/SatTrack';
+
+ReactDOM.createRoot(document.getElementById('root')).render( 
+  <React.StrictMode>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to={'/home'} />} />
+        <Route path='/home' element={<Home />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="*" element={<PageNotFound />} />
+
+        {/* Projects */}
+        <Route path={'/projects/Biology-Lab-Simulator'} element={<BioLabSim />} />
+        <Route path={'/projects/HackCU24-Sat-Track'} element={<SatTrack />} />
+        <Route path={'/projects/Proxy-Web-Server'} element={<ProxyWebServer />} />
+        <Route path={'/projects/Connect-Four-AI'} element={<ConnectFourAI />} />
+        <Route path={'/projects/Doodle-Designer'} element={<DoodleDesigner />} />
+      </Routes>
+    </Router>
+  </React.StrictMode>
+);
