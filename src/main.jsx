@@ -10,6 +10,7 @@ import './index.css';
 import Home from './pages/Home';
 import Education from './pages/Education';
 import Projects from './pages/Projects';
+import PageNotFound from './pages/PageNotFound';
 
 // Project Pages
 import BioLabSim from './pages/projects/BioLabSim';
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/home' element={<Home />} />
         <Route path="/education" element={<Education />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="*" element={<PageNotFound />} />
 
         {/* Projects */}
         <Route path={'/projects/Biology-Lab-Simulator'} element={<BioLabSim />} />
