@@ -174,19 +174,45 @@ h2 {
   outline: 2px solid var(--secondary-highlight-color);
   border-radius: 4px;
 
-  width: 80%;
+  width: 67%;
 
   padding: 12px;
 }
 
 .card p {
-  margin-top: 6px;
+  margin: 6px 0;
+  font-size: 18px;
 }
 /* End general main styling */
 
 /* Home Page */
-.home-card {
+.home-card-section h2 {
+  margin: 12px 0 0;
+}
 
+.home-card-section p:nth-child(2n + 1) {
+  margin: 18px 0;
+}
+
+.tech-icons-container {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.tech-icons-container p.tech-icon-label {
+  font-size: 14px;
+  margin: 6px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tech-icon-container {
+  text-align: center;
+  flex-direction: column;
+}
+
+.tech-icon {
+  height: 60px;
 }
 
 .home-card-sections-container {
@@ -203,10 +229,6 @@ h2 {
 }
 
 /* Education page */
-.education-card p {
-  font-size: 18px; 
-}
-
 .education-title-container {
   padding: 6px 0 6px;
 }
