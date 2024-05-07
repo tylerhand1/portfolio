@@ -325,3 +325,8 @@ h2 {
   font-style: italic;
 }
 /* End project styling */
+
+/* Start 404 Page */
+.err-404-card {
+  text-align: center;
+}
