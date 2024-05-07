@@ -324,6 +324,34 @@ h2 {
   color: var(--secondary-text-color);
   font-style: italic;
 }
+/* End projects styling */
+
+/* Start project styling */
+.project-page-container {
+  width: 80%;
+  padding: 12px;
+
+  /* outline: 1px solid green; */
+}
+
+.project-page-container p {
+  font-size: 18px;
+}
+
+.project-page-section {
+  margin: 24px 0 36px;
+}
+
+.project-text {
+  padding-left: 12px;
+
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.project-page-img {
+  height: 300px;
+}
 /* End project styling */
 
 /* Start 404 Page */
