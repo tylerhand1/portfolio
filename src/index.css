@@ -110,12 +110,17 @@ header,
 footer {
   width: 100%;
   justify-content: center;
+  
+  position: sticky;
+
+  background-color: var(--main-bg-color);
 }
 
 header {
   border-bottom: 2px solid var(--secondary-highlight-color);
 
   margin-bottom: 36px;
+  top: 0;
 }
 
 header ul {
@@ -147,6 +152,10 @@ header ul li a:hover {
 header ul li.selected a,
 header ul li a:focus {
   color: var(--main-highlight-color);
+}
+
+footer {
+  bottom: 0;
 }
 /* End header and footer styling */
 
