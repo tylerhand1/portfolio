@@ -3,6 +3,23 @@ import Navbar from '../../components/Navbar';
 // Images
 import projectImage from '../../assets/projects/BioLabSim/gel_electrophoresis.png';
 
+// Tech icons
+import godotIcon from '../../assets/technology-icons/GodotEngine.svg';
+import gitIcon from '../../assets/technology-icons/Git.svg';
+
+const techData = [
+  {
+    id: 0,
+    icon: gitIcon,
+    name: 'Git Icon',
+  },
+  {
+    id: 1,
+    icon: godotIcon,
+    name: 'Godot Icon',
+  },
+];
+
 const BioLabSim = () => {
   return (
     <>
@@ -43,6 +60,18 @@ const BioLabSim = () => {
               <p>Our team used git branches to implement each individual object to faciliate version control.</p>
               <p>This project uses Godot version 3.5.3 as the game engine and GDScript to implement the necessary logic of the biology lab simulation.</p>
               <p>To run the simulation on the web, our team used Godot&apos;s HTML5 export and GitHub Pages for deployment.</p>
+            </div>
+            <div className='project-tech-icons-container'>
+              <div className='flex tech-icons-container'>
+                {techData.map(tech => {
+                  return (
+                    <div key={tech.id} className='flex flex-column tech-icon-container'>
+                      <p className='tech-icon-label'>{tech.name.replace('Icon', '')}</p>
+                      <img key={tech.id} className='tech-icon' src={tech.icon} alt={tech.name} />
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

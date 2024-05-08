@@ -208,6 +208,7 @@ h2 {
 .tech-icons-container {
   justify-content: space-evenly;
   flex-wrap: wrap;
+  flex: 1;
 }
 
 .tech-icons-container p.tech-icon-label {
@@ -330,7 +331,7 @@ h2 {
 .project-page-container {
   width: 80%;
   padding: 12px;
-  
+
   justify-content: center;
 }
 
@@ -348,6 +349,7 @@ h2 {
 
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .project-page-img {
@@ -377,6 +379,18 @@ h2 {
 
 .project-page-list span strong {
   font-size: 18px;
+}
+
+.project-tech-icons-container {
+  width: 100%;
+}
+
+.project-tech-icons-container .tech-icons-container {
+  justify-content: flex-start;
+}
+
+.project-tech-icons-container .tech-icons-container .tech-icon-container {
+  margin: 0 12px;
 }
 /* End project styling */
 
