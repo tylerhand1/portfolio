@@ -75,6 +75,10 @@
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .grid {
   display: grid;
 }
@@ -110,12 +114,17 @@ header,
 footer {
   width: 100%;
   justify-content: center;
+  
+  position: sticky;
+
+  background-color: var(--main-bg-color);
 }
 
 header {
   border-bottom: 2px solid var(--secondary-highlight-color);
 
   margin-bottom: 36px;
+  top: 0;
 }
 
 header ul {
@@ -148,6 +157,10 @@ header ul li.selected a,
 header ul li a:focus {
   color: var(--main-highlight-color);
 }
+
+footer {
+  bottom: 0;
+}
 /* End header and footer styling */
 
 /* General main styling */
@@ -155,8 +168,6 @@ main {
   color: var(--main-text-color);
 
   width: 67%;
-
-  flex-direction: column;
   align-items: center;
 }
 
@@ -197,6 +208,7 @@ h2 {
 .tech-icons-container {
   justify-content: space-evenly;
   flex-wrap: wrap;
+  flex: 1;
 }
 
 .tech-icons-container p.tech-icon-label {
@@ -208,7 +220,6 @@ h2 {
 
 .tech-icon-container {
   text-align: center;
-  flex-direction: column;
 }
 
 .tech-icon {
@@ -234,7 +245,7 @@ h2 {
 }
 
 .education-title-text-container {
-  flex: 2;
+  justify-content: space-evenly;
 }
 
 .education-title-text-container h2 {
@@ -288,7 +299,6 @@ h2 {
   outline: 2px solid var(--main-text-color);
   border-radius: 4px;
   height: 80%;
-  flex-direction: column;
   justify-content: space-around;
 
   color: var(--main-text-color);
@@ -315,4 +325,76 @@ h2 {
   color: var(--secondary-text-color);
   font-style: italic;
 }
+/* End projects styling */
+
+/* Start project styling */
+.project-page-container {
+  width: 80%;
+  padding: 12px;
+
+  justify-content: center;
+}
+
+.project-page-container h2 {
+  font-size: 28px;
+}
+
+.project-page-container p,
+.project-page-container ul {
+  font-size: 18px;
+}
+
+.project-page-section {
+  margin: 12px 0;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-page-img {
+  width: 48%;
+  min-width: 450px;
+}
+
+.project-text {
+  flex-direction: column;
+}
+
+.project-text-side {
+  width: 50%;
+}
+
+.project-text p {
+  margin: 6px 0;
+}
+
+.project-page-list li {
+  margin: 6px 0;
+}
+
+.project-page-list span {
+  font-size: 16px;
+}
+
+.project-page-list span strong {
+  font-size: 18px;
+}
+
+.project-tech-icons-container {
+  width: 100%;
+}
+
+.project-tech-icons-container .tech-icons-container {
+  justify-content: flex-start;
+}
+
+.project-tech-icons-container .tech-icons-container .tech-icon-container {
+  margin: 0 12px;
+}
 /* End project styling */
+
+/* Start 404 Page */
+.err-404-card {
+  text-align: center;
+}

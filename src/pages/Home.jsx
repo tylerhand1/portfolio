@@ -69,7 +69,7 @@ const Home = () => {
   return (
     <>
       <Navbar isHome={true} />
-      <main className='flex'>
+      <main className='flex flex-column'>
         <div className='card home-card'>
           <h1>About Me</h1>
           <div className='home-card-sections-container'>
@@ -84,10 +84,10 @@ const Home = () => {
             </div>
             <div className='home-card-section'>
               <h2>Technologies</h2>
-              <div className="flex tech-icons-container">
+              <div className='flex tech-icons-container'>
                 {techData.map(tech => {
                   return (
-                    <div key={tech.id} className='flex tech-icon-container'>
+                    <div key={tech.id} className='flex flex-column tech-icon-container'>
                       <p className='tech-icon-label'>{tech.name.replace('Icon', '')}</p>
                       <img key={tech.id} className='tech-icon' src={tech.icon} alt={tech.name} />
                     </div>

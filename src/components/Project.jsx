@@ -11,8 +11,8 @@ const Project = ({ img, imgAlt, title, info }) => {
 
   if (img && imgAlt) {
     return (
-      <div className="project-card">
-        <Link className="flex" to={`${baseLink}/${titleLink}`}>
+      <div className='project-card'>
+        <Link className='flex flex-column' to={`${baseLink}/${titleLink}`}>
           <img src={img} alt={imgAlt} />
           <h4>{title}</h4>
           <p>{info}</p>
@@ -21,8 +21,8 @@ const Project = ({ img, imgAlt, title, info }) => {
     );
   }
   return (
-    <div className="project-card">
-      <Link className="flex" to={`${baseLink}/${titleLink}`}>
+    <div className='project-card'>
+      <Link className='flex flex-column' to={`${baseLink}/${titleLink}`}>
         <h4>{title}</h4>
         <p>{info}</p>
       </Link>

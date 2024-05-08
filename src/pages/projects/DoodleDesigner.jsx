@@ -4,7 +4,7 @@ const DoodleDesigner = () => {
   return (
     <>
       <Navbar isProjects={true} />
-      <main className="flex">
+      <main className='flex flex-column'>
         <h1>DoodleDesigner</h1>
       </main>
     </>

@@ -4,7 +4,7 @@ const SatTrack = () => {
   return (
     <>
       <Navbar isProjects={true} />
-      <main className="flex">
+      <main className='flex flex-column'>
         <h1>Sat-Track</h1>
       </main>
     </>

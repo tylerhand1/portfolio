@@ -6,14 +6,13 @@ const Education = () => {
   return (
     <>
       <Navbar isEducation={true} />
-      <main className='flex'>
+      <main className='flex flex-column'>
         <div className='card education-card'>
           <h1>Education</h1>
           <div className='flex education-title-container'>
-            <div className='education-title-text-container'>
+            <div className='flex flex-column education-title-text-container'>
               <h2>University of Colorado Boulder</h2>
-              <h3>Bachelor of Science in Computer Science</h3>
-              <h4>Expected graduation: May 2024</h4>
+              <h3>Bachelor of Science in Computer Science, 2024</h3>
             </div>
             <div className='flex education-title-logo-container'>
               <img src={CULogo} className='cu-logo' />
