@@ -14,7 +14,6 @@ import PageNotFound from './pages/PageNotFound';
 
 // Project Pages
 import BioLabSim from './pages/projects/BioLabSim';
-import ConnectFourAI from './pages/projects/ConnectFourAI';
 import DoodleDesigner from './pages/projects/DoodleDesigner';
 import ProxyWebServer from './pages/projects/ProxyWebServer';
 import SatTrack from './pages/projects/SatTrack';
@@ -33,7 +32,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path={'/projects/Biology-Lab-Simulator'} element={<BioLabSim />} />
         <Route path={'/projects/HackCU24-Sat-Track'} element={<SatTrack />} />
         <Route path={'/projects/Proxy-Web-Server'} element={<ProxyWebServer />} />
-        <Route path={'/projects/Connect-Four-AI'} element={<ConnectFourAI />} />
         <Route path={'/projects/Doodle-Designer'} element={<DoodleDesigner />} />
       </Routes>
     </Router>
