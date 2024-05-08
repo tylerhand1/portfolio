@@ -4,7 +4,7 @@ const ConnectFourAI = () => {
   return (
     <>
       <Navbar isProjects={true} />
-      <main className="flex">
+      <main className='flex flex-column'>
         <h1>Connect Four AI</h1>
       </main>
     </>

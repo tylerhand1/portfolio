@@ -24,10 +24,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path='/home' element={<Navigate to={'/'} />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/education' element={<Education />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='*' element={<PageNotFound />} />
 
         {/* Projects */}
         <Route path={'/projects/Biology-Lab-Simulator'} element={<BioLabSim />} />
