@@ -3,12 +3,13 @@ import Navbar from '../components/Navbar';
 // Technology icons
 import cIcon from '../assets/technology-icons/C.svg';
 import cssIcon from '../assets/technology-icons/CSS3.svg';
+import expressIcon from '../assets/technology-icons/Express.svg';
 import gitIcon from '../assets/technology-icons/Git.svg';
 import godotIcon from '../assets/technology-icons/GodotEngine.svg';
 import htmlIcon from '../assets/technology-icons/HTML5.svg';
 import jsIcon from '../assets/technology-icons/JavaScript.svg';
-import mysqlIcon from '../assets/technology-icons/MySQL.svg';
 import nodeIcon from '../assets/technology-icons/Nodejs.svg';
+import psqlIcon from '../assets/technology-icons/PostgreSQL.svg';
 import pythonIcon from '../assets/technology-icons/Python.svg';
 import reactIcon from '../assets/technology-icons/React.svg';
 
@@ -21,7 +22,7 @@ const techData = [
   {
     id: 1,
     icon: cssIcon,
-    name: 'CSS5 Icon',
+    name: 'CSS3 Icon',
   },
   {
     id: 2,
@@ -40,26 +41,31 @@ const techData = [
   },
   {
     id: 5,
-    icon: mysqlIcon,
-    name: 'MySQL Icon',
+    icon: expressIcon,
+    name: 'Express Icon'
   },
   {
     id: 6,
+    icon: psqlIcon,
+    name: 'PostgreSQL Icon',
+  },
+  {
+    id: 7,
     icon: gitIcon,
     name: 'Git Icon',
   },
   {
-    id: 7,
+    id: 8,
     icon: godotIcon,
     name: 'Godot Icon',
   },
   {
-    id: 8,
+    id: 9,
     icon: pythonIcon,
     name: 'Python Icon',
   },
   {
-    id: 9,
+    id: 10,
     icon: cIcon,
     name: 'C Icon',
   },
