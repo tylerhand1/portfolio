@@ -22,7 +22,7 @@ const techData = [
   {
     id: 1,
     icon: cssIcon,
-    name: 'CSS5 Icon',
+    name: 'CSS3 Icon',
   },
   {
     id: 3,
