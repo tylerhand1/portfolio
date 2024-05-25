@@ -26,7 +26,8 @@ const ProxyWebServer = () => {
           <h1>Proxy Web Server</h1>
           <div className='flex project-page-section'>
             <div className='flex flex-column project-text'>
-              <p></p>
+              <p>This proxy web server was written in C to apply what I learned about proxy servers as well as further my experience in socket programming.</p>
+              <p>I also learned how to implement the libcurl API to faciliate traffic between the server, the client and the Internet.</p>
             </div>
           </div>
           <h2>Features</h2>
@@ -35,14 +36,14 @@ const ProxyWebServer = () => {
               <ul className='project-page-list'>
                 <li>
                   <span>
-                    <strong></strong>
-                    
+                    <strong>Caching: </strong>
+                    The proxy server uses a user-defined timeout to determine whether content the proxy server deems cacheable is stale or not. If it is not, it serves the cached version to reduce network traffic and increase response time for the user.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong></strong>
-                    
+                    <strong>Blocking websites: </strong>
+                    This server also provides the ability to easily add websites through URLs or IP address to prevent users from accessing content.
                   </span>
                 </li>
               </ul>
