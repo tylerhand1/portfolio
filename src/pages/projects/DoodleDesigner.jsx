@@ -54,7 +54,9 @@ const DoodleDesigner = () => {
           <div className='flex project-page-section'>
             <img className='project-page-img' src={projectImage} alt='Screenshot of Gel Electrophoresis module' />
             <div className='flex flex-column project-text project-text-side'>
-              <p></p>
+              <p>Doodle Designer provides users with the ability to create and save drawings on the web using a vanilla frontend and PHP backend.</p>
+              <p>It also requires a user to sign up or login to save, edit, or delete their drawings to provide security to their creations.</p>
+              <p>There is also an export option to allow users to save to their local storage.</p>
             </div>
           </div>
           <h2>Features</h2>
@@ -63,14 +65,32 @@ const DoodleDesigner = () => {
               <ul className='project-page-list'>
                 <li>
                   <span>
-                    <strong></strong>
-                    
+                    <strong>Sign up/Login: </strong>
+                    Users are able to create an account, requiring only a name, email, username and password. They are also able to sign in with their credentials and perform user-specific operations like changing password.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong></strong>
-                    
+                    <strong>Create drawings: </strong>
+                    Users can create drawings with a color picker and eraser to make fun and interesting doodles. There are options to export and save their drawings so they can work on them offline or save their work.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <strong>Edit drawings: </strong>
+                    They can also go back to old drawings and edit and save them.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <strong>Delete drawings: </strong>
+                    If they no longer like the drawing or wish to get rid of it, they are able to delete their drawing.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <strong>Search drawings: </strong>
+                    Users can also search for other drawings that they or others have created.
                   </span>
                 </li>
               </ul>
