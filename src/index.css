@@ -71,6 +71,7 @@
   font-family: Lato, sans-serif;
 }
 
+/* Common classes */
 .flex {
   display: flex;
 }
@@ -81,6 +82,11 @@
 
 .grid {
   display: grid;
+}
+
+/* overflow removed from html to prevent overflow on Projects.jsx */
+html {
+  overflow: hidden;
 }
 
 html, 
@@ -97,16 +103,25 @@ body {
   --secondary-text-color: #ddd;
   --main-highlight-color: #10ac84;
   --secondary-highlight-color: #1dd1a1;
+
+  --header-height: 54px;
+  --footer-height: 106px;
 }
 
+/* set overflow to scroll in body to allow scrolling overflowed content */
 body {
   background-color: var(--main-bg-color);
+  overflow: scroll;
 }
 
 #root {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+a {
+  color: var(--main-text-color)
 }
 
 /* Start header and footer styling */
@@ -121,10 +136,13 @@ footer {
 }
 
 header {
+  top: 0;
+  position: sticky;
+  z-index: 1;
+
   border-bottom: 2px solid var(--secondary-highlight-color);
 
   margin-bottom: 36px;
-  top: 0;
 }
 
 header ul {
@@ -145,7 +163,6 @@ header ul li {
 }
 
 header ul li a {
-  color: var(--main-text-color);
   padding: 12px 0;
 }
 
@@ -159,7 +176,22 @@ header ul li a:focus {
 }
 
 footer {
+  position: relative;
   bottom: 0;
+  z-index: 0;
+
+  padding-bottom: 12px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer .tech-icon-container p {
+  visibility: hidden;
+  padding-top: 12px;
+}
+
+footer .tech-icon-container:hover p {
+  visibility: visible;
 }
 /* End header and footer styling */
 
@@ -169,6 +201,8 @@ main {
 
   width: 67%;
   align-items: center;
+
+  min-height: calc(100vh - var(--header-height) - var(--footer-height) - 40px);
 }
 
 h1 {
