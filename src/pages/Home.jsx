@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 // Technology icons
 import cIcon from '../assets/technology-icons/C.svg';
@@ -110,6 +111,7 @@ const Home = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

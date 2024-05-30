@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import Project from '../components/Project';
 
 const Projects = () => {
@@ -14,6 +15,7 @@ const Projects = () => {
           <Project title={'Doodle Designer'} info={'A 2D web-based painter with image saving capabilities'} />
         </div>
       </main>
+      <Footer />
     </>
   );
 };

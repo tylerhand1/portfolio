@@ -1,4 +1,5 @@
 import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 // Images
 import projectImage from '../../assets/projects/HackCU10/sat_track.png';
@@ -119,6 +120,7 @@ const SatTrack = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

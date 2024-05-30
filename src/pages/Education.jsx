@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 import CULogo from '../assets/education/cu_logo.svg';
 
@@ -28,6 +29,7 @@ const Education = () => {
           </p>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
