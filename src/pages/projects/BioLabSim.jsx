@@ -1,4 +1,5 @@
 import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 // Images
 import projectImage from '../../assets/projects/BioLabSim/gel_electrophoresis.png';
@@ -76,6 +77,7 @@ const BioLabSim = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

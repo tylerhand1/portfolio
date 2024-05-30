@@ -1,4 +1,5 @@
 import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 // Images
 import projectImage from '../../assets/projects/DoodleDesigner/doodle_designer.png';
@@ -116,6 +117,7 @@ const DoodleDesigner = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

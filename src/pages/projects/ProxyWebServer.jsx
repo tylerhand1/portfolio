@@ -1,4 +1,5 @@
 import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 // Tech icons
 import cIcon from '../../assets/technology-icons/C.svg';
@@ -69,6 +70,7 @@ const ProxyWebServer = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

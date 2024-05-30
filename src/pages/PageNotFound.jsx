@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const PageNotFound = () => {
   return (
@@ -10,6 +11,7 @@ const PageNotFound = () => {
           <p>Page not found. Please use the above navigation menu.</p>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
