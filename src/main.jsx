@@ -5,6 +5,7 @@ import {
   Routes, Route, Navigate
 } from 'react-router-dom';
 import './index.css';
+import './font.css';
 
 // Pages
 import Home from './pages/Home';
