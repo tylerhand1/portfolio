@@ -3,6 +3,7 @@ Welcome to the repository for my current portfolio website! The site acts as a s
 ## Technologies Used
 I utilized React and Vite to build an efficient single page application. To add and style content, I used HTML5 and CSS3. To implement a navigation bar and project menu, I used React Router.
 ## Usage
+This site is live at [https://tylerhand.dev/](https://tylerhand.dev/) if you wish to check it out.<br>
 If you would like to run this site locally, please adhere to the following instructions:
 - Ensure you are using Node.js v20 at a minimum
 - To install necessary node modules, execute `cd portfolio && npm i`
