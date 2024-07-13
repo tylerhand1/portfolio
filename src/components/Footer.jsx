@@ -11,7 +11,6 @@ const Footer = () => {
         target='_blank'
       >
         <div className='tech-icon-container'>
-          <p className='footer-icon-text'>Tyler&apos;s GitHub</p>
           <img src={gitHubIcon} className='tech-icon' />
         </div>
       </Link>
@@ -20,7 +19,6 @@ const Footer = () => {
         target='_blank'
       >
         <div className='tech-icon-container'>
-          <p className='footer-icon-text'>Tyler&apos;s LinkedIn</p>
           <img src={linkedInIcon} className='tech-icon' />
         </div>
       </Link>
