@@ -43,7 +43,7 @@ body {
 
   --main-width: 90%;
   --header-height: 54px;
-  --header-margin: 36px;
+  --header-margin: 24px;
   --footer-height: 106px;
 }
 
@@ -51,6 +51,7 @@ body {
 body {
   background-color: var(--main-bg-color);
   overflow: scroll;
+  font-size: 62.5%;
 }
 
 #root {
@@ -90,7 +91,7 @@ header ul {
 }
 
 header ul li {
-  font-size: 26px;
+  font-size: 1.8rem;
 
   padding: 0 1%;
   margin: 0 1%;
@@ -146,10 +147,20 @@ h1 {
   width: 100%;
   text-align: center;
   padding-bottom: 6px;
+  font-size: 2.6rem;
 }
 
 h2 {
   padding-bottom: 3px;
+  font-size: 2.0rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 .card {
@@ -164,7 +175,7 @@ h2 {
 
 .card p {
   margin: 6px 0;
-  font-size: 18px;
+  font-size: 1.4rem;
 }
 /* End general main styling */
 
@@ -182,14 +193,10 @@ h2 {
 }
 
 .tech-icons-container p.tech-icon-label {
-  font-size: 14px;
+  font-size: 1.2rem;
   margin: 6px;
   font-weight: bold;
   color: #fff;
-}
-
-.tech-icons-container p.tech-icon-label.small {
-  font-size: 12px;
 }
 
 .tech-icon-container {
@@ -198,11 +205,11 @@ h2 {
   align-items: center;
   text-align: center;
   flex: 1;
+  width: 6.6rem;
 }
 
 .tech-icon {
-  height: 50px;
-  max-width: 66px;
+  height: 5.0rem;
 }
 
 .home-card-sections-container {
@@ -220,25 +227,21 @@ h2 {
 
 /* Education page */
 .education-title-container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 6px 0 6px;
 }
 
 .education-title-text-container {
   justify-content: space-evenly;
-}
-
-.education-title-text-container h2 {
-  font-size: 32px;
+  padding: 0 0 12px;
 }
 
 .education-title-text-container h3,
 .education-title-text-container h4 {
   color: var(--secondary-text-color);
   padding: 4px 0;
-}
-
-.education-title-text-container h3 {
-  font-size: 22px;
 }
 
 .education-title-text-container h4 {
@@ -295,14 +298,10 @@ h2 {
   outline-color: var(--main-highlight-color)
 }
 
-.project-card h4 {
-  text-align: center;
-  font-size: 24px;
-}
-
 .project-card p {
   color: var(--secondary-text-color);
   font-style: italic;
+  font-size: 1.0rem;
 }
 /* End projects styling */
 
@@ -382,11 +381,23 @@ h2 {
   :root {
     --main-width: 67%;
   }
+
   header ul li {
     padding: 0 36px;
+    font-size: 2.6rem;
+  }
+
+  .tech-icon-container {
+    width: 6.6rem;
   }
 
   .tech-icon {
-    height: 60px;
+    height: 6.0rem;
+    width: 4.6rem;
+  }
+
+  .education-title-container {
+    flex-direction: row;
+    text-align: left;
   }
 }
