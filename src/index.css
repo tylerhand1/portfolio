@@ -90,7 +90,8 @@ header ul {
   list-style: none;
 }
 
-header ul li {
+header ul li,
+header ul li a p {
   font-size: 1.8rem;
 
   padding: 0 1%;
@@ -161,6 +162,11 @@ h3 {
 
 h4 {
   font-size: 1.2rem;
+}
+
+p,
+span {
+  font-size: 1.4rem;
 }
 
 .card {
@@ -307,19 +313,9 @@ h4 {
 
 /* Start project styling */
 .project-page-container {
-  width: 80%;
   padding: 12px;
 
   justify-content: center;
-}
-
-.project-page-container h2 {
-  font-size: 28px;
-}
-
-.project-page-container p,
-.project-page-container ul {
-  font-size: 18px;
 }
 
 .project-page-section {
@@ -331,16 +327,11 @@ h4 {
 }
 
 .project-page-img {
-  width: 48%;
-  min-width: 450px;
+  width: 100%;
 }
 
 .project-text {
   flex-direction: column;
-}
-
-.project-text-side {
-  width: 50%;
 }
 
 .project-text p {
@@ -375,6 +366,17 @@ h4 {
 /* Start 404 Page */
 .err-404-card {
   text-align: center;
+}
+
+@media only screen and (min-width: 1378px) {
+  .project-page-img {
+    width: 48%;
+    min-width: 450px;
+  }
+
+  .project-text-side {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
