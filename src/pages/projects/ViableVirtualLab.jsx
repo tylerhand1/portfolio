@@ -2,7 +2,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 // Images
-import projectImage from '../../assets/projects/BioLabSim/gel_electrophoresis.png';
+import projectImage from '../../assets/projects/ViableVirtualLab/gel_electrophoresis.png';
 
 // Tech icons
 import godotIcon from '../../assets/technology-icons/GodotEngine.svg';
@@ -21,13 +21,13 @@ const techData = [
   },
 ];
 
-const BioLabSim = () => {
+const ViableVirtualLab = () => {
   return (
     <>
       <Navbar isProjects={true} />
       <main className='flex flex-column'>
         <div className='flex flex-column project-page-container'>
-          <h1>Biology Lab Simulator Framework</h1>
+          <h1>Viable Virtual Lab</h1>
           <div className='flex project-page-section'>
             <img className='project-page-img' src={projectImage} alt='Screenshot of Gel Electrophoresis module' />
             <div className='flex flex-column project-text project-text-side'>
@@ -49,7 +49,7 @@ const BioLabSim = () => {
                 <li>
                   <span>
                     <strong>Error logging: </strong>
-                    The biology lab simulator framework provides a means to log user actions with three levels of distinction, which includes basic log info, warnings and errors. This allows the user to easily see their mistakes and how severe they are.
+                    The biology virtual lab provides a means to log user actions with three levels of distinction, which includes basic log info, warnings and errors. This allows the user to easily see their mistakes and how severe they are.
                   </span>
                 </li>
               </ul>
@@ -82,4 +82,4 @@ const BioLabSim = () => {
   );
 };
 
-export default BioLabSim;
+export default ViableVirtualLab;

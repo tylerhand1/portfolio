@@ -13,7 +13,7 @@ import Projects from './pages/Projects';
 import PageNotFound from './pages/PageNotFound';
 
 // Project Pages
-import BioLabSim from './pages/projects/BioLabSim';
+import ViableVirtualLab from './pages/projects/ViableVirtualLab';
 import DoodleDesigner from './pages/projects/DoodleDesigner';
 import ProxyWebServer from './pages/projects/ProxyWebServer';
 import SatTrack from './pages/projects/SatTrack';
@@ -29,7 +29,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='*' element={<PageNotFound />} />
 
         {/* Projects */}
-        <Route path={'/projects/Biology-Lab-Simulator'} element={<BioLabSim />} />
+        <Route path={'/projects/Viable-Virtual-Lab'} element={<ViableVirtualLab />} />
         <Route path={'/projects/HackCU10-Sat-Track'} element={<SatTrack />} />
         <Route path={'/projects/Proxy-Web-Server'} element={<ProxyWebServer />} />
         <Route path={'/projects/Doodle-Designer'} element={<DoodleDesigner />} />
