@@ -41,7 +41,9 @@ body {
   --main-highlight-color: #10ac84;
   --secondary-highlight-color: #1dd1a1;
 
-  --main-width: 90%;
+  --main-width: 95%;
+  --project-container-width: 90%;
+
   --header-height: 54px;
   --header-margin: 24px;
   --footer-height: 106px;
@@ -141,19 +143,19 @@ main {
   width: var(--main-width);
   align-items: center;
 
-  min-height: calc(100vh - var(--header-height) - var(--footer-height) - 40px);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--header-margin) - 62px);
 }
 
 h1 {
   width: 100%;
   text-align: center;
   padding-bottom: 6px;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
 }
 
 h2 {
   padding-bottom: 3px;
-  font-size: 2.0rem;
+  font-size: 2.4rem;
 }
 
 h3 {
@@ -166,6 +168,10 @@ h4 {
 
 p,
 span {
+  font-size: 1.4rem;
+}
+
+strong {
   font-size: 1.4rem;
 }
 
@@ -272,7 +278,7 @@ span {
 }
 
 .project-container {
-  width: 100%;
+  width: var(--project-container-width);
   padding: 12px;
 
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -313,6 +319,8 @@ span {
 
 /* Start project styling */
 .project-page-container {
+  width: var(--project-container-width);
+
   padding: 12px;
 
   justify-content: center;
@@ -334,20 +342,9 @@ span {
   flex-direction: column;
 }
 
-.project-text p {
-  margin: 6px 0;
-}
-
+.project-text p,
 .project-page-list li {
   margin: 6px 0;
-}
-
-.project-page-list span {
-  font-size: 16px;
-}
-
-.project-page-list span strong {
-  font-size: 18px;
 }
 
 .project-tech-icons-container {
@@ -368,25 +365,21 @@ span {
   text-align: center;
 }
 
-@media only screen and (min-width: 1378px) {
-  .project-page-img {
-    width: 48%;
-    min-width: 450px;
-  }
-
-  .project-text-side {
-    width: 50%;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   :root {
-    --main-width: 67%;
+    --main-width: 70%;
+    --project-container-width: 95%;
+
+    --header-margin: 36px;
   }
 
   header ul li {
     padding: 0 36px;
     font-size: 2.6rem;
+  }
+
+  main {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--header-margin) - 77px);
   }
 
   .tech-icon-container {
@@ -401,5 +394,16 @@ span {
   .education-title-container {
     flex-direction: row;
     text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1378px) {
+  .project-page-img {
+    width: 48%;
+    min-width: 450px;
+  }
+
+  .project-text-side {
+    width: 50%;
   }
 }
