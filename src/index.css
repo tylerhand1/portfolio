@@ -104,7 +104,9 @@ body {
   --main-highlight-color: #10ac84;
   --secondary-highlight-color: #1dd1a1;
 
+  --main-width: 90%;
   --header-height: 54px;
+  --header-margin: 36px;
   --footer-height: 106px;
 }
 
@@ -139,24 +141,22 @@ header {
   top: 0;
   position: sticky;
   z-index: 1;
-
   border-bottom: 2px solid var(--secondary-highlight-color);
 
-  margin-bottom: 36px;
+  margin-bottom: var(--header-margin);
 }
 
 header ul {
-  flex: 1;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   list-style: none;
 }
 
 header ul li {
   font-size: 26px;
 
-  padding: 0 32px;
-  margin: 0 18px;
+  padding: 0 1%;
+  margin: 0 1%;
 
   justify-content: center;
   align-items: center;
@@ -199,7 +199,7 @@ footer .tech-icon-container:hover p {
 main {
   color: var(--main-text-color);
 
-  width: 67%;
+  width: var(--main-width);
   align-items: center;
 
   min-height: calc(100vh - var(--header-height) - var(--footer-height) - 40px);
@@ -221,7 +221,8 @@ h2 {
 
   width: 67%;
 
-  padding: 12px;
+  padding: 24px;
+  margin-bottom: var(--header-margin);
 }
 
 .card p {
@@ -240,9 +241,7 @@ h2 {
 }
 
 .tech-icons-container {
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  flex: 1;
 }
 
 .tech-icons-container p.tech-icon-label {
@@ -252,12 +251,21 @@ h2 {
   color: #fff;
 }
 
+.tech-icons-container p.tech-icon-label.small {
+  font-size: 12px;
+}
+
 .tech-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  flex: 1;
 }
 
 .tech-icon {
-  height: 60px;
+  height: 50px;
+  max-width: 66px;
 }
 
 .home-card-sections-container {
@@ -431,4 +439,17 @@ h2 {
 /* Start 404 Page */
 .err-404-card {
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --main-width: 67%;
+  }
+  header ul li {
+    padding: 0 36px;
+  }
+
+  .tech-icon {
+    height: 60px;
+  }
 }
