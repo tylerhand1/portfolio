@@ -4,8 +4,8 @@ import {
   BrowserRouter as Router,
   Routes, Route, Navigate
 } from 'react-router-dom';
-import '@/index.css';
-import '@/font.css';
+import '@/stylesheets/index.css';
+import '@/stylesheets/font.css';
 
 // Pages
 import Home from '@/pages/Home';

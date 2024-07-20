@@ -176,7 +176,6 @@ strong {
 }
 
 .card {
-  outline: 2px solid var(--secondary-highlight-color);
   border-radius: 4px;
 
   width: 67%;
@@ -380,6 +379,10 @@ strong {
 
   main {
     min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--header-margin) - 26px);
+  }
+
+  .card {
+    outline: 2px solid var(--secondary-highlight-color);
   }
 
   .tech-icon-container {
