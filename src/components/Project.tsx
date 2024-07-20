@@ -1,13 +1,13 @@
-/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
+import { ProjectProps } from '@/types';
 
-const Project = ({ img, imgAlt, title, info }) => {
-  const createLink = (title) => {
+const Project = ({ img, imgAlt, title, info }: ProjectProps) => {
+  const createLink = (title: string) => {
     return title.replace(/ /g, '-');
   };
 
-  let baseLink = '/projects';
-  let titleLink = createLink(title);
+  const baseLink = '/projects';
+  const titleLink = createLink(title);
 
   if (img && imgAlt) {
     return (
