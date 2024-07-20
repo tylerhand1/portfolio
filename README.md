@@ -1,11 +1,11 @@
 # Tyler's Portfolio Website
-Welcome to the repository for my current portfolio website! The site acts as a showcase of my skills, education and pass project experiences.
+Welcome to the repository for my current portfolio website! The site acts as a showcase of my skills, education and past project experiences.
 ## Technologies Used
-I utilized React and Vite to build an efficient single page application. To add and style content, I used HTML5 and CSS3. To implement a navigation bar and project menu, I used React Router.
+I utilized React, TypeScript, and Vite to build an efficient single page application. I structured and styled the site by employing HTML and CSS.
 ## Usage
 This site is live at [https://tylerhand.dev/](https://tylerhand.dev/) if you wish to check it out.<br>
 If you would like to run this site locally, please adhere to the following instructions:
-- Ensure you are using Node.js v20 at a minimum
+- Ensure you are using at least Node version 20
 - To install necessary node modules, execute `cd portfolio && npm i`
 - To run, execute `npm run dev`
 ## Feedback
