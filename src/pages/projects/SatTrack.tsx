@@ -1,18 +1,18 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 // Images
-import projectImage from '../../assets/projects/HackCU10/sat_track.png';
+import projectImage from '@/assets/projects/HackCU10/sat_track.png';
 
 // Tech icons
-import cssIcon from '../../assets/technology-icons/CSS3.svg';
-import expressIcon from '../../assets/technology-icons/Express.svg';
-import gitIcon from '../../assets/technology-icons/Git.svg';
-import htmlIcon from '../../assets/technology-icons/HTML5.svg';
-import nodeIcon from '../../assets/technology-icons/Nodejs.svg';
-import psqlIcon from '../../assets/technology-icons/PostgreSQL.svg';
-import reactIcon from '../../assets/technology-icons/React.svg';
-import tsIcon from '../../assets/technology-icons/TypeScript.svg';
+import cssIcon from '@/assets/technology-icons/CSS3.svg';
+import expressIcon from '@/assets/technology-icons/Express.svg';
+import gitIcon from '@/assets/technology-icons/Git.svg';
+import htmlIcon from '@/assets/technology-icons/HTML5.svg';
+import nodeIcon from '@/assets/technology-icons/Nodejs.svg';
+import psqlIcon from '@/assets/technology-icons/PostgreSQL.svg';
+import reactIcon from '@/assets/technology-icons/React.svg';
+import tsIcon from '@/assets/technology-icons/TypeScript.svg';
 
 const techData = [
   {

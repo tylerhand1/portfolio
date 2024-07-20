@@ -1,7 +1,7 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
-import CULogo from '../assets/education/cu_logo.svg';
+import CULogo from '@/assets/education/cu_logo.svg';
 
 const Education = () => {
   return (
@@ -20,7 +20,7 @@ const Education = () => {
             </div>
           </div>
           <p>Prior to starting my education journey at CU Boulder, I was always interested in programming
-            and web development. Because of this passion, I chose to pursue a Bachelor&apos;s of Science 
+            and web development. Because of this passion, I chose to pursue a Bachelor&apos;s of Science
             in computer science.
           </p>
           <p>At CU Boulder, I have taken classes in a variety of topics within the field of computer science.

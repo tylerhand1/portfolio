@@ -1,18 +1,18 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 // Technology icons
-import cIcon from '../assets/technology-icons/C.svg';
-import cssIcon from '../assets/technology-icons/CSS3.svg';
-import expressIcon from '../assets/technology-icons/Express.svg';
-import gitIcon from '../assets/technology-icons/Git.svg';
-import godotIcon from '../assets/technology-icons/GodotEngine.svg';
-import htmlIcon from '../assets/technology-icons/HTML5.svg';
-import jsIcon from '../assets/technology-icons/JavaScript.svg';
-import nodeIcon from '../assets/technology-icons/Nodejs.svg';
-import psqlIcon from '../assets/technology-icons/PostgreSQL.svg';
-import pythonIcon from '../assets/technology-icons/Python.svg';
-import reactIcon from '../assets/technology-icons/React.svg';
+import cIcon from '@/assets/technology-icons/C.svg';
+import cssIcon from '@/assets/technology-icons/CSS3.svg';
+import expressIcon from '@/assets/technology-icons/Express.svg';
+import gitIcon from '@/assets/technology-icons/Git.svg';
+import godotIcon from '@/assets/technology-icons/GodotEngine.svg';
+import htmlIcon from '@/assets/technology-icons/HTML5.svg';
+import jsIcon from '@/assets/technology-icons/JavaScript.svg';
+import nodeIcon from '@/assets/technology-icons/Nodejs.svg';
+import psqlIcon from '@/assets/technology-icons/PostgreSQL.svg';
+import pythonIcon from '@/assets/technology-icons/Python.svg';
+import reactIcon from '@/assets/technology-icons/React.svg';
 
 const techData = [
   {
@@ -83,7 +83,7 @@ const Home = () => {
             <div className='home-card-section'>
               <h2>My Experience</h2>
               <p>
-                As someone who is enticed by learning and taking on new challenges, I am a full stack developer with a relentless interest to continue learning more about React, JavaScript, and Node.js. 
+                As someone who is enticed by learning and taking on new challenges, I am a full stack developer with a relentless interest to continue learning more about React, JavaScript, and Node.js.
               </p>
               <p>
                 I have one year of experience collaborating with a team of six and communicating with the client and education team to design and build a biology lab simulator framework in Godot and GDScript.
