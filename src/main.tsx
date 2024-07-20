@@ -14,6 +14,7 @@ import Projects from '@/pages/Projects';
 import PageNotFound from '@/pages/PageNotFound';
 
 // Project Pages
+import MultiplayerTicTacToe from '@/pages/projects/MultiplayerTicTacToe';
 import ViableVirtualLab from '@/pages/projects/ViableVirtualLab';
 import DoodleDesigner from '@/pages/projects/DoodleDesigner';
 import ProxyWebServer from '@/pages/projects/ProxyWebServer';
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='*' element={<PageNotFound />} />
 
         {/* Projects */}
+        <Route path={'/projects/Multiplayer-Tic-Tac-Toe'} element={<MultiplayerTicTacToe />} />
         <Route path={'/projects/Viable-Virtual-Lab'} element={<ViableVirtualLab />} />
         <Route path={'/projects/HackCU10-Sat-Track'} element={<SatTrack />} />
         <Route path={'/projects/Proxy-Web-Server'} element={<ProxyWebServer />} />

@@ -1,8 +1,8 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-// Images
-import projectImage from '@/assets/projects/HackCU10/sat_track.png';
+// Video
+import TicTacToeDemo from '@/assets/projects/TicTacToe/TicTacToeDemo.mp4';
 
 // Tech icons
 import cssIcon from '@/assets/technology-icons/CSS3.svg';
@@ -10,9 +10,9 @@ import expressIcon from '@/assets/technology-icons/Express.svg';
 import gitIcon from '@/assets/technology-icons/Git.svg';
 import htmlIcon from '@/assets/technology-icons/HTML5.svg';
 import nodeIcon from '@/assets/technology-icons/Nodejs.svg';
-import psqlIcon from '@/assets/technology-icons/PostgreSQL.svg';
 import reactIcon from '@/assets/technology-icons/React.svg';
 import tsIcon from '@/assets/technology-icons/TypeScript.svg';
+import socketIOIcon from '@/assets/technology-icons/Socket.io.svg';
 
 const techData = [
   {
@@ -47,8 +47,8 @@ const techData = [
   },
   {
     id: 7,
-    icon: psqlIcon,
-    name: 'PostgreSQL Icon'
+    icon: socketIOIcon,
+    name: 'Socket.IO Icon'
   },
   {
     id: 8,
@@ -57,41 +57,45 @@ const techData = [
   },
 ];
 
-const SatTrack = () => {
+const MultiplayerTicTacToe = () => {
   return (
     <>
       <Navbar isProjects={true} />
       <main className='flex flex-column'>
         <div className='flex flex-column project-page-container'>
-          <h1>HackCU10 Sat-Track</h1>
+          <h1>Multiplayer<br />Tic-Tac-Toe</h1>
           <div className='flex project-page-section'>
-            <img className='project-page-media' src={projectImage} alt='Screenshot of Gel Electrophoresis module' />
+            <video className='project-page-media' controls>
+              <source src={TicTacToeDemo} type='video/mp4' />
+            </video>
             <div className='flex flex-column project-text project-text-side'>
               <h2>Introduction</h2>
-              <p>Sat-Track is designed to provide tracking and information of satellites orbiting Earth in real time. This facilitates finding necessary telemtry data about any satellite Sat-Track has.</p>
-              <p>My team of three built this within 24 hours for the HackCU10 hackathon!</p>
+              <p>This site aims to enable people to play tic-tac-toe with their friends with a simple to use interface.</p>
+              <p>It allows anyone to be able to play a quick game by just clicking 'Create Lobby' or joining off a friend from their lobby code.</p>
+              <p>The goal of this project was to further my understanding of websockets and the socket.IO library.</p>
             </div>
           </div>
+          <h2>This project is live <a href='https://tictactoe.tylerhand.dev/'>here</a>!</h2>
           <h2>Features</h2>
           <div className='flex project-page-section'>
             <div>
               <ul className='project-page-list'>
                 <li>
                   <span>
-                    <strong>Default Satellite Info: </strong>
-                    Sat-Track, upon visiting for the first time, displays telemetry data about several well-known satellites in low orbit, including the ISS and the Hubble Space Telescope!
+                    <strong>Create / Join Lobbies: </strong>
+                    This website enables users to create a new game lobby and invite their friends through an invite code or join an existing lobby through that code.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Satellite Search: </strong>
-                    Sat-Track also comes included with the ability to obtain information about other satellites orbiting Earth. Perfect for the space enthusiast!
+                    <strong>Unique Lobby Code Generation: </strong>
+                    Unique codes are generated through a POST request to the backend that returns a number that is not in use and allows the frontend to then join a socket.IO room with that number.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Real-Time Updates: </strong>
-                    Sat-Track provides real-time updates about satellites listed in the display, perfect for those wishing to spot these orbiting wonders!
+                    <strong>Real-Time Game Updates: </strong>
+                    Once a player makes a move, the socket.IO backend will ensure that the other player receives that data, so that the game state is updated as soon as possible.
                   </span>
                 </li>
               </ul>
@@ -101,9 +105,9 @@ const SatTrack = () => {
           <div className='flex project-page-section'>
             <div className='flex flex-column project-text'>
               <h3>Frontend</h3>
-              <p>The frontend was built using React and TypeScript.</p>
+              <p>The frontend was built using React and TypeScript with Axios and the socket.io-client library to interact with the backend.</p>
               <h3>Backend</h3>
-              <p>The backend utilized an Express REST API to handle requests from the frontend, a PostgreSQL database and API calls to n2yo.com to obtain satellite information.</p>
+              <p>The backend utilized an Express REST API written in TypeScript and the socket.IO library to communicate with the frontend and keep track of games.</p>
             </div>
             <div className='project-tech-icons-container'>
               <div className='flex tech-icons-container'>
@@ -125,4 +129,4 @@ const SatTrack = () => {
   );
 };
 
-export default SatTrack;
+export default MultiplayerTicTacToe;

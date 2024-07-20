@@ -13,6 +13,7 @@ import nodeIcon from '@/assets/technology-icons/Nodejs.svg';
 import psqlIcon from '@/assets/technology-icons/PostgreSQL.svg';
 import pythonIcon from '@/assets/technology-icons/Python.svg';
 import reactIcon from '@/assets/technology-icons/React.svg';
+import typescriptIcon from '@/assets/technology-icons/TypeScript.svg';
 
 const techData = [
   {
@@ -32,41 +33,46 @@ const techData = [
   },
   {
     id: 3,
+    icon: typescriptIcon,
+    name: 'TypeScript Icon',
+  },
+  {
+    id: 4,
     icon: reactIcon,
     name: 'ReactJS Icon',
   },
   {
-    id: 4,
+    id: 5,
     icon: nodeIcon,
     name: 'Node.js Icon',
   },
   {
-    id: 5,
+    id: 6,
     icon: expressIcon,
     name: 'Express Icon'
   },
   {
-    id: 6,
+    id: 7,
     icon: psqlIcon,
     name: 'PostgreSQL Icon',
   },
   {
-    id: 7,
+    id: 8,
     icon: gitIcon,
     name: 'Git Icon',
   },
   {
-    id: 8,
+    id: 9,
     icon: godotIcon,
     name: 'Godot Icon',
   },
   {
-    id: 9,
+    id: 10,
     icon: pythonIcon,
     name: 'Python Icon',
   },
   {
-    id: 10,
+    id: 11,
     icon: cIcon,
     name: 'C Icon',
   },
