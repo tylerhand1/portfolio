@@ -1,9 +1,9 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 // Tech icons
-import cIcon from '../../assets/technology-icons/C.svg';
-import gitIcon from '../../assets/technology-icons/Git.svg';
+import cIcon from '@/assets/technology-icons/C.svg';
+import gitIcon from '@/assets/technology-icons/Git.svg';
 
 const techData = [
   {

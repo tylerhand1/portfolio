@@ -1,40 +1,59 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true, node: true },
+  env: { browser: true, es2020: true },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:react-hooks/recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: [
-    'react-refresh',
-    '@stylistic/js'
-  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+  plugins: ['react-refresh'],
   rules: {
-    'react/jsx-no-target-blank': 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
-    '@stylistic/js/indent': [
+    'indent': [
       'error',
-      2
+      2  
     ],
-    '@stylistic/js/linebreak-style': [
+    'linebreak-style': [
         'error',
         'unix'
     ],
-    '@stylistic/js/quotes': [
+    'quotes': [
         'error',
         'single'
     ],
-    '@stylistic/js/semi': [
+    'semi': [
         'error',
         'always'
     ],
+    'eqeqeq': 'error',
+    'no-trailing-spaces': 'error',
+    'object-curly-spacing': [
+        'error', 'always'
+    ],
+    'arrow-spacing': [
+        'error', { 'before': true, 'after': true }
+    ],
+    'no-console': 0,
+    'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 0,
+    'no-unused-vars': 0    
   },
 }

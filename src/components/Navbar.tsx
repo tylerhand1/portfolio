@@ -1,7 +1,7 @@
-/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
+import { NavBarProps } from '@/types';
 
-const Navbar = ({ isHome, isEducation, isProjects }) => {
+const Navbar = ({ isHome, isEducation, isProjects }: NavBarProps) => {
   return (
     <>
       <header className='flex'>
@@ -22,7 +22,7 @@ const Navbar = ({ isHome, isEducation, isProjects }) => {
             </Link>
           </li>
         </ul>
-        
+
       </header>
     </>
   );

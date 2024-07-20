@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
-import gitHubIcon from '../assets/technology-icons/GitHub.svg';
-import linkedInIcon from '../assets/technology-icons/LinkedIn.svg';
+import gitHubIcon from '@/assets/technology-icons/GitHub.svg';
+import linkedInIcon from '@/assets/technology-icons/LinkedIn.svg';
 
 const Footer = () => {
   return (

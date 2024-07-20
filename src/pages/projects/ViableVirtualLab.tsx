@@ -1,12 +1,12 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 // Images
-import projectImage from '../../assets/projects/ViableVirtualLab/gel_electrophoresis.png';
+import projectImage from '@/assets/projects/ViableVirtualLab/gel_electrophoresis.png';
 
 // Tech icons
-import godotIcon from '../../assets/technology-icons/GodotEngine.svg';
-import gitIcon from '../../assets/technology-icons/Git.svg';
+import godotIcon from '@/assets/technology-icons/GodotEngine.svg';
+import gitIcon from '@/assets/technology-icons/Git.svg';
 
 const techData = [
   {
