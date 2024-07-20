@@ -1,11 +1,10 @@
 on:
   pull_request:
   push:
-    branches: main
 
 jobs:
   deploy:
-    if: github.event.pull_request.merged == true
+    if: github.ref == 'refs/origin/main' && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       contents: read

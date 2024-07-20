@@ -4,22 +4,22 @@ import {
   BrowserRouter as Router,
   Routes, Route, Navigate
 } from 'react-router-dom';
-import './index.css';
-import './font.css';
+import '@/index.css';
+import '@/font.css';
 
 // Pages
-import Home from './pages/Home';
-import Education from './pages/Education';
-import Projects from './pages/Projects';
-import PageNotFound from './pages/PageNotFound';
+import Home from '@/pages/Home';
+import Education from '@/pages/Education';
+import Projects from '@/pages/Projects';
+import PageNotFound from '@/pages/PageNotFound';
 
 // Project Pages
-import ViableVirtualLab from './pages/projects/ViableVirtualLab';
-import DoodleDesigner from './pages/projects/DoodleDesigner';
-import ProxyWebServer from './pages/projects/ProxyWebServer';
-import SatTrack from './pages/projects/SatTrack';
+import ViableVirtualLab from '@/pages/projects/ViableVirtualLab';
+import DoodleDesigner from '@/pages/projects/DoodleDesigner';
+import ProxyWebServer from '@/pages/projects/ProxyWebServer';
+import SatTrack from '@/pages/projects/SatTrack';
 
-ReactDOM.createRoot(document.getElementById('root')).render( 
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>
       <Routes>

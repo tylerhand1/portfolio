@@ -1,16 +1,16 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 // Images
-import projectImage from '../../assets/projects/DoodleDesigner/doodle_designer.png';
+import projectImage from '@/assets/projects/DoodleDesigner/doodle_designer.png';
 
 // Tech icons
-import cssIcon from '../../assets/technology-icons/CSS3.svg';
-import gitIcon from '../../assets/technology-icons/Git.svg';
-import htmlIcon from '../../assets/technology-icons/HTML5.svg';
-import jsIcon from '../../assets/technology-icons/JavaScript.svg';
-import mysqlIcon from '../../assets/technology-icons/MySQL.svg';
-import phpIcon from '../../assets/technology-icons/PHP.svg';
+import cssIcon from '@/assets/technology-icons/CSS3.svg';
+import gitIcon from '@/assets/technology-icons/Git.svg';
+import htmlIcon from '@/assets/technology-icons/HTML5.svg';
+import jsIcon from '@/assets/technology-icons/JavaScript.svg';
+import mysqlIcon from '@/assets/technology-icons/MySQL.svg';
+import phpIcon from '@/assets/technology-icons/PHP.svg';
 
 const techData = [
   {
