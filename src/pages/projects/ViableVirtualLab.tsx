@@ -29,7 +29,7 @@ const ViableVirtualLab = () => {
         <div className='flex flex-column project-page-container'>
           <h1>Viable Virtual Lab</h1>
           <div className='flex project-page-section'>
-            <img className='project-page-img' src={projectImage} alt='Screenshot of Gel Electrophoresis module' />
+            <img className='project-page-media' src={projectImage} alt='Screenshot of Gel Electrophoresis module' />
             <div className='flex flex-column project-text project-text-side'>
               <p>This biology lab simulation framework is designed to provide a necessary lab experience and learning to students who may not have the same opportunities more wealthy students.</p>
               <p>The first module, the gel electrophoresis lab, is a realistic simulation of a lab a typical first-year biology student does.</p>

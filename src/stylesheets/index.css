@@ -63,7 +63,7 @@ body {
 }
 
 a {
-  color: var(--main-text-color)
+  color: var(--main-highlight-color)
 }
 
 /* Start header and footer styling */
@@ -105,6 +105,7 @@ header ul li a p {
 
 header ul li a {
   padding: 12px 0;
+  color: var(--main-text-color);
 }
 
 header ul li a:hover {
@@ -155,15 +156,15 @@ h1 {
 
 h2 {
   padding-bottom: 3px;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 p,
@@ -176,7 +177,6 @@ strong {
 }
 
 .card {
-  outline: 2px solid var(--secondary-highlight-color);
   border-radius: 4px;
 
   width: 67%;
@@ -217,11 +217,11 @@ strong {
   align-items: center;
   text-align: center;
   flex: 1;
-  width: 6.6rem;
+  width: 114px;
 }
 
 .tech-icon {
-  height: 5.0rem;
+  height: 80px;
 }
 
 .home-card-sections-container {
@@ -334,7 +334,7 @@ strong {
   align-items: center;
 }
 
-.project-page-img {
+.project-page-media {
   width: 100%;
 }
 
@@ -382,13 +382,16 @@ strong {
     min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--header-margin) - 26px);
   }
 
-  .tech-icon-container {
-    width: 6.6rem;
+  .card {
+    outline: 2px solid var(--secondary-highlight-color);
+  }
+
+  .tech-icons-container p.tech-icon-label {
+    font-size: 1rem;
   }
 
   .tech-icon {
-    height: 6.0rem;
-    width: 4.6rem;
+    height: 62px;
   }
 
   .education-title-container {
@@ -398,7 +401,7 @@ strong {
 }
 
 @media only screen and (min-width: 1378px) {
-  .project-page-img {
+  .project-page-media {
     width: 48%;
     min-width: 450px;
   }

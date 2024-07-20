@@ -53,7 +53,7 @@ const DoodleDesigner = () => {
         <div className='flex flex-column project-page-container'>
           <h1>Doodle Designer</h1>
           <div className='flex project-page-section'>
-            <img className='project-page-img' src={projectImage} alt='Screenshot of Gel Electrophoresis module' />
+            <img className='project-page-media' src={projectImage} alt='Screenshot of Gel Electrophoresis module' />
             <div className='flex flex-column project-text project-text-side'>
               <p>Doodle Designer provides users with the ability to create and save drawings on the web using a vanilla frontend and PHP backend.</p>
               <p>It also requires a user to sign up or login to save, edit, or delete their drawings to provide security to their creations.</p>
