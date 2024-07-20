@@ -5,8 +5,6 @@ export interface NavBarProps {
 }
 
 export interface ProjectProps {
-  img: string,
-  imgAlt: string,
   title: string,
   info: string
 }

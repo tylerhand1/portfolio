@@ -1,25 +1,13 @@
 import { Link } from 'react-router-dom';
 import { ProjectProps } from '@/types';
 
-const Project = ({ img, imgAlt, title, info }: ProjectProps) => {
+const Project = ({ title, info }: ProjectProps) => {
   const createLink = (title: string) => {
     return title.replace(/ /g, '-');
   };
 
   const baseLink = '/projects';
   const titleLink = createLink(title);
-
-  if (img && imgAlt) {
-    return (
-      <div className='project-card'>
-        <Link className='flex flex-column' to={`${baseLink}/${titleLink}`}>
-          <img src={img} alt={imgAlt} />
-          <h4>{title}</h4>
-          <p>{info}</p>
-        </Link>
-      </div>
-    );
-  }
   return (
     <div className='project-card'>
       <Link className='flex flex-column' to={`${baseLink}/${titleLink}`}>
