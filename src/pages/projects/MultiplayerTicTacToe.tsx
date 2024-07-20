@@ -71,7 +71,7 @@ const MultiplayerTicTacToe = () => {
             <div className='flex flex-column project-text project-text-side'>
               <h2>Introduction</h2>
               <p>This site aims to enable people to play tic-tac-toe with their friends with a simple to use interface.</p>
-              <p>It allows anyone to be able to play a quick game by just clicking 'Create Lobby' or joining off a friend from their lobby code.</p>
+              <p>It allows anyone to be able to play a quick game by just clicking &apos;Create Lobby&apos; or joining off a friend from their lobby code.</p>
               <p>The goal of this project was to further my understanding of websockets and the socket.IO library.</p>
             </div>
           </div>
