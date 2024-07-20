@@ -4,7 +4,7 @@ on:
 
 jobs:
   deploy:
-    if: github.ref == 'refs/origin/main' && github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       contents: read
