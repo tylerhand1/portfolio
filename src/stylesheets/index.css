@@ -27,7 +27,8 @@ html {
 }
 
 html, 
-body {
+body,
+#root {
   height: 100%;
 }
 
@@ -60,6 +61,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 a {
@@ -118,10 +120,7 @@ header ul li a:focus {
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  z-index: 0;
-
+  align-items: center;
   padding: 15px 0;
 
   background-color: rgba(0, 0, 0, 0.6);
@@ -143,8 +142,7 @@ main {
 
   width: var(--main-width);
   align-items: center;
-
-  min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--header-margin) - 10px);
+  flex: 1;
 }
 
 h1 {
@@ -376,10 +374,6 @@ strong {
   header ul li {
     padding: 0 36px;
     font-size: 2.6rem;
-  }
-
-  main {
-    min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--header-margin) - 26px);
   }
 
   .card {
