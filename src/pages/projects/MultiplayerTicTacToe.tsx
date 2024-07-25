@@ -75,7 +75,7 @@ const MultiplayerTicTacToe = () => {
               <p>The goal of this project was to further my understanding of websockets and the socket.IO library.</p>
             </div>
           </div>
-          <h2>This project is live <a href='https://tictactoe.tylerhand.dev/'>here</a>!</h2>
+          <h2>This project is live <a href='https://tictactoe.tylerhand.dev/' target='blank'>here</a>!</h2>
           <h2>Features</h2>
           <div className='flex project-page-section'>
             <div>
