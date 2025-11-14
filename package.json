@@ -1,14 +1,42 @@
 {
-  "devDependencies": {
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.6",
-    "prettier": "^3.6.2"
-  },
+  "name": "portfolio",
+  "version": "0.0.0",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "prepare": "husky"
   },
+  "dependencies": {
+    "next": "16.0.3",
+    "next-themes": "^0.4.6",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.3",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "3.6.2",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6"
+  },
   "lint-staged": {
-    "**/*.{json,yml,yaml,md}": [
+    "*/**.{js,jsx,ts,tsx}": [
+      "npx eslint",
+      "npx prettier --check"
+    ],
+    "*.{json,yml,yaml,md}": [
       "npx prettier --check"
     ]
   }
