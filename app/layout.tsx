@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Roboto_Flex } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
+import Header from './_components/Header';
 
 const robotoFlex = Roboto_Flex({
   variable: '--font-roboto-flex',
@@ -23,7 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${robotoFlex.className} antialiased`}>
-        <ThemeProvider enableSystem>{children}</ThemeProvider>
+        <ThemeProvider enableSystem scriptProps={{ 'data-cfasync': 'false' }}>
+          <Header />
+          <main className="pt-20 px-4 min-h-[calc(100dvh-5rem)]">
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
