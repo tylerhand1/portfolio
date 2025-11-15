@@ -25,8 +25,9 @@
   --color-fg-primary: var(--foreground-primary);
   --color-fg-secondary: var(--foreground-secondary);
   --color-fg-tertiary: var(--foreground-tertiary);
+  --color-highlight: var(--color-emerald-500);
 
-  --color-font-roboto-flex: var(--font-roboto-flex);
+  --font-roboto-flex: var(--font-roboto-flex);
 }
 
 body {
