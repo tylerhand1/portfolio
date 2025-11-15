@@ -28,7 +28,7 @@ const Header = () => {
     <header className="w-full flex justify-between items-center fixed top-0 px-5 h-20">
       <button
         suppressHydrationWarning={true}
-        className="cursor-pointer hover:bg-bg-secondary outline outline-fg-tertiary rounded-md p-1.5"
+        className="cursor-pointer hover:bg-bg-secondary outline-2 outline-fg-tertiary rounded-md p-1.5"
         onClick={handleToggleClick}
       >
         {theme === 'light' ? (
@@ -39,7 +39,7 @@ const Header = () => {
       </button>
       {pathname !== '/' && (
         <Link href={'/'}>
-          <button className="cursor-pointer hover:bg-bg-secondary outline outline-fg-tertiary rounded-md p-1.5 fill-fg-primary">
+          <button className="cursor-pointer hover:bg-bg-secondary outline-2 outline-fg-tertiary rounded-md p-1.5 fill-fg-primary">
             <ArrowBackIcon className="size-5 md:size-7 lg:size-8" />
           </button>
         </Link>

@@ -6,12 +6,12 @@ import Header from './_components/Header';
 
 const robotoFlex = Roboto_Flex({
   variable: '--font-roboto-flex',
-  weight: ['400'],
+  weight: ['300', '400', '700', '900'],
   subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "Tyler's Portfolio",
+  title: "Tyler Hand's Portfolio",
   description:
     'Tyler Hand is a web developer who specializes in fullstack development.',
 };
@@ -26,9 +26,7 @@ export default function RootLayout({
       <body className={`${robotoFlex.className} antialiased`}>
         <ThemeProvider enableSystem scriptProps={{ 'data-cfasync': 'false' }}>
           <Header />
-          <main className="pt-20 px-4 min-h-[calc(100dvh-5rem)]">
-            {children}
-          </main>
+          <main className="min-h-[calc(100dvh-5rem)]">{children}</main>
         </ThemeProvider>
       </body>
     </html>

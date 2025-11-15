@@ -6,15 +6,16 @@
   --background-tertiary: var(--color-zinc-200);
   --foreground-primary: var(--color-zinc-950);
   --foreground-secondary: var(--color-zinc-700);
-  --foreground-tertiary: var(--color-zinc-400);
+  --foreground-tertiary: var(--color-zinc-600);
 }
 
 [data-theme='dark'] {
   --background-primary: var(--color-zinc-950);
-  --background-secondary: var(--color-zinc-700);
-  --background-tertiary: var(--color-zinc-400);
+  --background-secondary: var(--color-zinc-800);
+  --background-tertiary: var(--color-zinc-700);
   --foreground-primary: var(--color-zinc-50);
   --foreground-secondary: var(--color-zinc-300);
+  --foreground-tertiary: var(--color-zinc-400);
 }
 
 @theme inline {
