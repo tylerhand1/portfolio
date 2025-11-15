@@ -7,6 +7,8 @@
   --foreground-primary: var(--color-zinc-950);
   --foreground-secondary: var(--color-zinc-700);
   --foreground-tertiary: var(--color-zinc-600);
+
+  --highlight-glow: var(--color-emerald-700);
 }
 
 [data-theme='dark'] {
@@ -16,6 +18,8 @@
   --foreground-primary: var(--color-zinc-50);
   --foreground-secondary: var(--color-zinc-100);
   --foreground-tertiary: var(--color-zinc-200);
+
+  --highlight-glow: var(--color-emerald-400);
 }
 
 @theme inline {
@@ -26,7 +30,7 @@
   --color-fg-secondary: var(--foreground-secondary);
   --color-fg-tertiary: var(--foreground-tertiary);
   --color-highlight: var(--color-emerald-500);
-  --color-highlight-glow: var(--color-emerald-400);
+  --color-highlight-glow: var(--highlight-glow);
 
   --font-roboto-flex: var(--font-roboto-flex);
 }
