@@ -6,7 +6,7 @@ import Header from '../layouts/Header';
 
 const robotoFlex = Roboto_Flex({
   variable: '--font-roboto-flex',
-  weight: ['300', '400', '700', '900'],
+  weight: ['300', '400', '500', '700', '900'],
   subsets: ['latin'],
 });
 

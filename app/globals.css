@@ -11,11 +11,11 @@
 
 [data-theme='dark'] {
   --background-primary: var(--color-zinc-950);
-  --background-secondary: var(--color-zinc-800);
-  --background-tertiary: var(--color-zinc-700);
+  --background-secondary: var(--color-zinc-900);
+  --background-tertiary: var(--color-zinc-800);
   --foreground-primary: var(--color-zinc-50);
-  --foreground-secondary: var(--color-zinc-300);
-  --foreground-tertiary: var(--color-zinc-400);
+  --foreground-secondary: var(--color-zinc-100);
+  --foreground-tertiary: var(--color-zinc-200);
 }
 
 @theme inline {
@@ -26,6 +26,7 @@
   --color-fg-secondary: var(--foreground-secondary);
   --color-fg-tertiary: var(--foreground-tertiary);
   --color-highlight: var(--color-emerald-500);
+  --color-highlight-glow: var(--color-emerald-400);
 
   --font-roboto-flex: var(--font-roboto-flex);
 }
