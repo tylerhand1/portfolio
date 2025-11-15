@@ -9,7 +9,7 @@ import LightIcon from '../app/_components/UI/Icons/Light';
 import DarkIcon from '../app/_components/UI/Icons/Dark';
 
 const Header = () => {
-  const { theme, setTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
 
@@ -19,29 +19,48 @@ const Header = () => {
   }, []);
 
   const handleToggleClick = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
   };
 
   if (!mounted) return null;
 
   return (
-    <header className="w-full flex justify-between items-center fixed top-0 px-5 h-20">
+    <header
+      role="banner"
+      className="w-full flex justify-between items-center fixed top-0 px-4 h-16 z-999"
+    >
       <button
         suppressHydrationWarning={true}
-        className="cursor-pointer hover:bg-bg-secondary outline-2 outline-fg-tertiary rounded-md p-1.5"
+        className="cursor-pointer backdrop-blur-md hover:bg-bg-tertiary focus:bg-bg-tertiary outline-2 outline-fg-tertiary rounded-md p-1.5"
         onClick={handleToggleClick}
+        aria-label="Toggle theme"
+        aria-pressed={resolvedTheme === 'dark' ? 'true' : 'false'}
       >
-        {theme === 'light' ? (
-          <LightIcon className="size-5 md:size-7 lg:size-8 fill-amber-400" />
+        {resolvedTheme === 'light' ? (
+          <LightIcon
+            aria-hidden="true"
+            focusable={false}
+            className="size-5 md:size-7 lg:size-8 fill-amber-400"
+          />
         ) : (
-          <DarkIcon className="size-5 md:size-7 lg:size-8 fill-amber-100" />
+          <DarkIcon
+            aria-hidden="true"
+            focusable={false}
+            className="size-5 md:size-7 lg:size-8 fill-amber-100"
+          />
         )}
       </button>
       {pathname !== '/' && (
-        <Link href={'/'}>
-          <button className="cursor-pointer hover:bg-bg-secondary outline-2 outline-fg-tertiary rounded-md p-1.5 fill-fg-primary">
-            <ArrowBackIcon className="size-5 md:size-7 lg:size-8" />
-          </button>
+        <Link
+          className="hover:bg-bg-tertiary outline-2 outline-fg-tertiary rounded-md p-1.5 fill-fg-primary"
+          href={'/'}
+          aria-label="Go to home page"
+        >
+          <ArrowBackIcon
+            aria-hidden="true"
+            focusable={false}
+            className="size-5 md:size-7 lg:size-8"
+          />
         </Link>
       )}
     </header>
