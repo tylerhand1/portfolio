@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Roboto_Flex } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
-import Header from './_components/Header';
+import Header from '../layouts/Header';
 
 const robotoFlex = Roboto_Flex({
   variable: '--font-roboto-flex',

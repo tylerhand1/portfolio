@@ -2,11 +2,11 @@
 
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
-import ArrowBackIcon from '../UI/Icons/ArrowBack';
+import ArrowBackIcon from '../app/_components/UI/Icons/ArrowBack';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import LightIcon from '../UI/Icons/Light';
-import DarkIcon from '../UI/Icons/Dark';
+import LightIcon from '../app/_components/UI/Icons/Light';
+import DarkIcon from '../app/_components/UI/Icons/Dark';
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
