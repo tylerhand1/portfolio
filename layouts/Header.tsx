@@ -52,7 +52,7 @@ const Header = () => {
       </button>
       {pathname !== '/' && (
         <Link
-          className="hover:bg-bg-tertiary outline-2 outline-fg-tertiary rounded-md p-1.5 fill-fg-primary"
+          className="hover:bg-bg-tertiary focus:bg-bg-tertiary outline-2 outline-fg-tertiary rounded-md p-1.5 fill-fg-primary"
           href={'/'}
           aria-label="Go to home page"
         >
