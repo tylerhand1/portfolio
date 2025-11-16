@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Tyler Hand's Portfolio",
   description:
     'Tyler Hand is a web developer who specializes in fullstack development.',
+  metadataBase: new URL('https://tylerhand.dev'),
 };
 
 export default function RootLayout({
