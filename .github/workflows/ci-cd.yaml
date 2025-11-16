@@ -35,6 +35,7 @@ jobs:
         run: npm run format:check
 
   deploy:
+    needs: portfolio-quality-checks
     runs-on: ubuntu-latest
     permissions:
       contents: read
