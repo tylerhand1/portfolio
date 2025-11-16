@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+:root {
+  --background-primary: var(--color-zinc-50);
+  --background-secondary: var(--color-zinc-100);
+  --background-tertiary: var(--color-zinc-200);
+  --foreground-primary: var(--color-zinc-950);
+  --foreground-secondary: var(--color-zinc-700);
+  --foreground-tertiary: var(--color-zinc-600);
+
+  --highlight-glow: var(--color-emerald-700);
+}
+
+[data-theme='dark'] {
+  --background-primary: var(--color-zinc-950);
+  --background-secondary: var(--color-zinc-900);
+  --background-tertiary: var(--color-zinc-800);
+  --foreground-primary: var(--color-zinc-50);
+  --foreground-secondary: var(--color-zinc-100);
+  --foreground-tertiary: var(--color-zinc-200);
+
+  --highlight-glow: var(--color-emerald-400);
+}
+
+@theme inline {
+  --color-bg-primary: var(--background-primary);
+  --color-bg-secondary: var(--background-secondary);
+  --color-bg-tertiary: var(--background-tertiary);
+  --color-fg-primary: var(--foreground-primary);
+  --color-fg-secondary: var(--foreground-secondary);
+  --color-fg-tertiary: var(--foreground-tertiary);
+  --color-highlight: var(--color-emerald-500);
+  --color-highlight-glow: var(--highlight-glow);
+
+  --font-roboto-flex: var(--font-roboto-flex);
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--foreground-primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
