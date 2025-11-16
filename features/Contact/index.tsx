@@ -14,7 +14,7 @@ const Contact = () => (
         <LinkedInIcon
           aria-hidden="true"
           focusable="false"
-          className="size-12 md:size-15 lg:size-18 fill-fg-tertiary hover:fill-fg-tertiary"
+          className="size-12 md:size-15 lg:size-18 fill-fg-tertiary hover:fill-fg-primary"
         />
       </a>
     </li>
@@ -28,7 +28,7 @@ const Contact = () => (
         <GithubIcon
           aria-hidden="true"
           focusable="false"
-          className="size-12 md:size-15 lg:size-18 fill-fg-tertiary hover:fill-fg-tertiary"
+          className="size-12 md:size-15 lg:size-18 fill-fg-tertiary hover:fill-fg-primary"
         />
       </a>
     </li>
@@ -40,7 +40,7 @@ const Contact = () => (
         <EmailIcon
           aria-hidden="true"
           focusable="false"
-          className="size-12 md:size-15 lg:size-18 fill-fg-tertiary hover:fill-fg-tertiary"
+          className="size-12 md:size-15 lg:size-18 fill-fg-tertiary hover:fill-fg-primary"
         />
       </a>
     </li>
