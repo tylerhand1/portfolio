@@ -4,6 +4,8 @@ import './globals.css';
 import { ThemeProvider } from 'next-themes';
 import Header from '../layouts/Header';
 
+export const dynamic = 'force-static';
+
 const robotoFlex = Roboto_Flex({
   variable: '--font-roboto-flex',
   weight: ['300', '400', '500', '700', '900'],
