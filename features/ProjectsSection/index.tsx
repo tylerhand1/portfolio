@@ -14,31 +14,6 @@ const ProjectsSection = () => (
     <SectionTitle>Projects</SectionTitle>
     <ExperienceList>
       <ExperienceItem>
-        <ExperienceTime>September 2025–Present</ExperienceTime>
-        <ExperienceMainContainer>
-          <ExperienceTitle>
-            Chat Application &middot; In Progress
-          </ExperienceTitle>
-          <ExperienceDescription>
-            Web application for chatting with friends in real time inspired by
-            apps like Discord and Slack that supports text messages.
-          </ExperienceDescription>
-          <TechIconList>
-            <TechIcon>JavaScript</TechIcon>
-            <TechIcon>TypeScript</TechIcon>
-            <TechIcon>HTML & Tailwind CSS</TechIcon>
-            <TechIcon>React</TechIcon>
-            <TechIcon>Express</TechIcon>
-            <TechIcon>PostgreSQL</TechIcon>
-            <TechIcon>Redis</TechIcon>
-            <TechIcon>Vitest</TechIcon>
-            <TechIcon>Playwright</TechIcon>
-            <TechIcon>AWS S3</TechIcon>
-            <TechIcon>AWS ECS & ECR</TechIcon>
-          </TechIconList>
-        </ExperienceMainContainer>
-      </ExperienceItem>
-      <ExperienceItem>
         <ExperienceTime>August 2024–Present</ExperienceTime>
         <ExperienceMainContainer>
           <ExperienceTitle>
@@ -60,6 +35,29 @@ const ProjectsSection = () => (
             <TechIcon>PostgreSQL</TechIcon>
             <TechIcon>OpenAI Whisper</TechIcon>
             <TechIcon>AWS Polly</TechIcon>
+          </TechIconList>
+        </ExperienceMainContainer>
+      </ExperienceItem>
+      <ExperienceItem>
+        <ExperienceTime>September 2025–December 2025</ExperienceTime>
+        <ExperienceMainContainer>
+          <ExperienceTitle>Chat Application</ExperienceTitle>
+          <ExperienceDescription>
+            Web application for chatting with friends in real time inspired by
+            apps like Discord and Slack that supports text messages.
+          </ExperienceDescription>
+          <TechIconList>
+            <TechIcon>JavaScript</TechIcon>
+            <TechIcon>TypeScript</TechIcon>
+            <TechIcon>HTML & Tailwind CSS</TechIcon>
+            <TechIcon>React</TechIcon>
+            <TechIcon>Express</TechIcon>
+            <TechIcon>PostgreSQL</TechIcon>
+            <TechIcon>Redis</TechIcon>
+            <TechIcon>Vitest</TechIcon>
+            <TechIcon>Playwright</TechIcon>
+            <TechIcon>AWS S3</TechIcon>
+            <TechIcon>AWS ECS & ECR</TechIcon>
           </TechIconList>
         </ExperienceMainContainer>
       </ExperienceItem>
