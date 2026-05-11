@@ -66,8 +66,17 @@ const Projects = () => {
 
             <CardFooter className="pt-4">
               {project.demoUrl ? (
-                <Button className="bg-primary text-primary-foreground font-bold px-6 ml-auto">
-                  View Demo
+                <Button
+                  className="bg-primary text-primary-foreground font-bold px-6 ml-auto"
+                  asChild
+                >
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    View Demo
+                  </a>
                 </Button>
               ) : (
                 <div className="h-8" />
