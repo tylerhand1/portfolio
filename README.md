@@ -1,24 +1,55 @@
 # Tyler's Portfolio Website
 
-Welcome to the repository for my current portfolio website! The site acts as a showcase of my skills, education and past project experiences.
+A technical showcase of my work and development standards, built with the same focus on performance and type-safety I bring to projects like Lexinari.
 
-## Technologies Used
+## Tech Stack & Architecture
 
-I utilized React, TypeScript, and Vite to build an efficient single page application. I structured and styled the site by employing HTML and CSS.
+- **Framework:** Next.js 16 (App Router, Client-Side Static Export)
+- **Language:** TypeScript
+- **Styling & UI:** Tailwind CSS + shadcn/ui
+- **Data Architecture:** Centralized JSON Content Schema
 
-## Usage
+## Local Development & Build
 
-This site is live at [https://tylerhand.dev/](https://tylerhand.dev/) if you wish to check it out.<br>
-If you would like to run this site locally, please adhere to the following instructions:
+Follow these steps to manage and compile the repository locally:
 
-- Ensure you are using at least Node version 20
-- To install necessary node modules, execute `cd portfolio && npm i`
-- To run, execute `npm run dev`
+### Prerequisites
 
-## Feedback
+- Node.js (Version 20 or higher recommended)
+- npm / pnpm / yarn
 
-I welcome and appreciate any potential input you have, as it helps me improve.
+### Installation
+
+1. Clone the repository and navigate to the root directory.
+2. Install the necessary project dependencies:
+   ```bash
+   npm install
+   ```
+
+### Execution
+
+Launch the local development environment:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) inside your browser to view the application.
+
+### Compilation (Static Production Export)
+
+To generate the static distribution build:
+
+```bash
+npm run build
+```
+
+This command triggers Next.js 16's static export logic, generating a production-ready assets directory named `/out` which can be served out of any static cloud storage tier or CDN bucket.
+
+## Live Application
+
+The production environment is continuously deployed and accessible at [tylerhand.dev](https://tylerhand.dev).
 
 ## License
 
-The source code is licensed under the [MIT license](https://github.com/tylerhand1/portfolio/blob/main/LICENSE). So feel free to fork and use however you please.
+This project is open-source software licensed under the terms of the [MIT License](https://github.com). Feel free to fork, modify, and reference the structural patterns.

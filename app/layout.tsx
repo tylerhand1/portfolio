@@ -1,22 +1,67 @@
-import type { Metadata } from 'next';
-import { Roboto_Flex } from 'next/font/google';
-import './globals.css';
-import { ThemeProvider } from 'next-themes';
-import Header from '../layouts/Header';
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-export const dynamic = 'force-static';
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
-const robotoFlex = Roboto_Flex({
-  variable: '--font-roboto-flex',
-  weight: ['300', '400', '500', '700', '900'],
-  subsets: ['latin'],
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Tyler Hand's Portfolio",
+  title: "Tyler Hand | Full-Stack Engineer",
   description:
-    'Tyler Hand is a web developer who specializes in fullstack development.',
-  metadataBase: new URL('https://tylerhand.dev'),
+    "Engineering high-performance full-stack systems with React, Express, .NET Core, and PostgreSQL. Focused on scalable architectures, type-safe APIs, and complex state management.",
+  metadataBase: new URL("https://tylerhand.dev"),
+  keywords: [
+    "Tyler Hand",
+    "Full-Stack Software Engineer",
+    "Frontend Developer",
+    "Express Backend Developer",
+    "Local-first development",
+    "Next.js Developer",
+    "Type-safe API Design",
+    "PostgreSQL Database Engineering",
+    "React State Architectures",
+    "Denver Software Engineer",
+  ],
+  authors: [{ name: "Tyler Hand" }],
+  openGraph: {
+    title: "Tyler Hand | Full-Stack Software Engineer",
+    description:
+      "Building high-performance web systems with React, Express, and .NET Core.",
+    url: "https://tylerhand.dev",
+    siteName: "Tyler Hand Portfolio",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Tyler Hand Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tyler Hand | Full-Stack Software Engineer",
+    description:
+      "Building high-performance web systems with React, Express, and .NET Core.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -25,13 +70,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${robotoFlex.className} antialiased`}>
-        <ThemeProvider enableSystem scriptProps={{ 'data-cfasync': 'false' }}>
-          <Header />
-          <main className="min-h-[calc(100dvh-5rem)]">{children}</main>
-        </ThemeProvider>
-      </body>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
+      suppressHydrationWarning
+    >
+      <body className="min-h-svh flex flex-col">{children}</body>
     </html>
   );
 }

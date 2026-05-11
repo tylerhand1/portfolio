@@ -1,23 +1,21 @@
-import BioSection from '@/features/BioSection';
-import SplashSection from './_components/SplashSection';
-import WorkSection from '@/features/WorkSection';
-import Content from '@/layouts/Content';
-import ProjectsSection from '@/features/ProjectsSection';
-import EducationSection from '@/features/EducationSection';
-import SkillsSection from '@/features/SkillsSection';
+import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
+import Projects from "@/components/Projects";
+import Navbar from "@/components/Navbar";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
-      <SplashSection>
-        <BioSection />
-      </SplashSection>
-      <Content>
-        <WorkSection />
-        <ProjectsSection />
-        <SkillsSection />
-        <EducationSection />
-      </Content>
+      <Navbar />
+      <main className="px-6">
+        <HeroSection />
+        <Projects />
+        <Experience />
+        <Footer />
+      </main>
     </>
   );
-}
+};
+
+export default Home;
