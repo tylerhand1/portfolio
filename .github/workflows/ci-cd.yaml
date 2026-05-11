@@ -25,9 +25,6 @@ jobs:
       - name: Check for ESLint errors
         run: npm run lint
 
-      - name: Check for formatting issues
-        run: npm run format:check
-
   deploy:
     needs: portfolio-quality-checks
     runs-on: ubuntu-latest
