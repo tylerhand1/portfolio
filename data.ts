@@ -93,13 +93,6 @@ export const portfolioData = {
       ],
     },
   ],
-  education: [
-    {
-      institution: "University of Colorado Boulder",
-      degree: "B.S. in Computer Science",
-      period: "May 2024",
-    },
-  ],
   connect: {
     email: "tylerhand135@gmail.com",
     github: "https://github.com/tylerhand1",
