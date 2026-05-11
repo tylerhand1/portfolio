@@ -17,21 +17,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Run ESLint and fix
-        run: npm run lint:fix
-
-      - name: Format with Prettier
-        run: npm run format
-
-      - name: Check for remaining ESLint errors
+      - name: Check for ESLint errors
         run: npm run lint
 
-      - name: Check for remaining formatting issues
+      - name: Check for formatting issues
         run: npm run format:check
 
   deploy:
@@ -54,6 +48,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: 'portfolio'
-          directory: 'out'
+          projectName: "portfolio"
+          directory: "out"
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
