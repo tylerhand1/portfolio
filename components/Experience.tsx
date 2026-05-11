@@ -15,7 +15,10 @@ const Experience = () => {
 
       <div className="flex flex-col gap-12 border-l border-border pl-6 ml-2">
         {portfolioData.experience.map((job) => (
-          <div key={job.company} className="relative flex flex-col gap-3">
+          <div
+            key={job.company}
+            className="relative cursor-pointer flex flex-col gap-3 group"
+          >
             <div className="absolute -left-7 top-2 w-2 h-2 rounded-full bg-primary border border-background shadow-sm" />
 
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
@@ -25,7 +28,7 @@ const Experience = () => {
                   at {job.company}
                 </span>
               </h3>
-              <span className="text-xs font-mono text-primary font-bold tracking-wider uppercase sm:normal-case sm:text-muted-foreground">
+              <span className="text-xs group-hover:text-primary font-mono text-primary font-bold tracking-wider uppercase sm:normal-case sm:text-muted-foreground">
                 {job.period}
               </span>
             </div>
